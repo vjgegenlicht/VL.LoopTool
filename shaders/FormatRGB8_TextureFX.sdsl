@@ -1,0 +1,12 @@
+[Category("Filter")]
+[Summary("Description for what the filter does")]
+[Remarks("Any special notes")]
+[Tags("comma separated list of tags")]
+[OutputFormat("R8G8B8A8_UNorm_SRgb")]
+shader FormatRGB8_TextureFX : FilterBase
+{
+    float4 Filter(float4 tex0col)
+    {
+      return tex0col;
+    }
+};
