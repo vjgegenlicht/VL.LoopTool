@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="Nth8CFNZnXsMdw6DOponQ2" LanguageVersion="2021.4.9.982" Version="0.128">
-  <NugetDependency Id="P31TcB21GpsQMoE5avRDIK" Location="VL.CoreLib" Version="2021.4.9" />
+<Document xmlns:p="property" Id="P1tOZhdVh7tLZz1nkfhkQT" LanguageVersion="2021.4.10.1043" Version="0.128">
+  <NugetDependency Id="P31TcB21GpsQMoE5avRDIK" Location="VL.CoreLib" Version="2021.4.10" />
   <Patch Id="KwF3lactQFAPXQKeExxGTJ">
     <Canvas Id="SY42jCjyWwzNXSZcNcrit7" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -719,7 +719,7 @@
                   <Pin Id="OLRmGCTZkQrOm6tFSkzjsF" Name="Input" Kind="InputPin" />
                   <Pin Id="BVIedBjGcsRLitlbmJbN1a" Name="FOV" Kind="InputPin" />
                   <Pin Id="Kqb4EIbKtVjMe7B1JZIKia" Name="Near Plane" Kind="InputPin" DefaultValue="0.01" />
-                  <Pin Id="PaDj9joS7UxL6JlrRuhtjO" Name="Vertigo Plane" Kind="InputPin" DefaultValue="8" />
+                  <Pin Id="PaDj9joS7UxL6JlrRuhtjO" Name="Vertigo Plane" Kind="InputPin" DefaultValue="-1.08" />
                   <Pin Id="IvNVseMtcb6NFHUNGbt6ga" Name="Far Plane" Kind="InputPin" />
                   <Pin Id="G6mb2HcsqdSMPxo3cY981A" Name="Output" Kind="OutputPin" />
                 </Node>
@@ -733,7 +733,7 @@
                     <Choice Kind="TypeFlag" Name="Float32" />
                   </p:TypeAnnotation>
                 </Pad>
-                <Pad Id="QHBKspI7OCQNwZURaI2iU6" Comment="FOV" Bounds="933,290,35,15" ShowValueBox="true" isIOBox="true" Value="0.13">
+                <Pad Id="QHBKspI7OCQNwZURaI2iU6" Comment="FOV" Bounds="975,307,35,15" ShowValueBox="true" isIOBox="true" Value="0.13">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="TypeFlag" Name="Float32" />
                   </p:TypeAnnotation>
@@ -801,7 +801,7 @@
                     <Choice Kind="TypeFlag" Name="Float32" />
                   </p:TypeAnnotation>
                 </Pad>
-                <Pad Id="H2ZF7WWug3BLOTzIXH9oe4" Comment="FOV" Bounds="963,496,35,15" ShowValueBox="true" isIOBox="true" Value="0.13">
+                <Pad Id="H2ZF7WWug3BLOTzIXH9oe4" Comment="FOV" Bounds="963,496,35,15" ShowValueBox="true" isIOBox="true" Value="0.23">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="TypeFlag" Name="Float32" />
                   </p:TypeAnnotation>
@@ -837,8 +837,8 @@
                   </p:NodeReference>
                   <Pin Id="VE3K0bLp7NqMGhtTHByYuh" Name="Input" Kind="InputPin" />
                   <Pin Id="VBpvJIFJaAcOkQNQeGzKjg" Name="FOV" Kind="InputPin" DefaultValue="0.12" />
-                  <Pin Id="E3LvxooHJRDO6934gTJZ4L" Name="Size" Kind="InputPin" DefaultValue="3.34" />
-                  <Pin Id="TJJHQrcgCJ1N49fvas3Rs9" Name="Depth" Kind="InputPin" DefaultValue="10" />
+                  <Pin Id="E3LvxooHJRDO6934gTJZ4L" Name="Size" Kind="InputPin" DefaultValue="4" />
+                  <Pin Id="TJJHQrcgCJ1N49fvas3Rs9" Name="Depth" Kind="InputPin" DefaultValue="9.03" />
                   <Pin Id="UfUp1P3zTV1LChJTcMxYcH" Name="Output" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="1076,532" Id="M9OYAOhHhsGMM9F0jJTqgs">
@@ -979,7 +979,7 @@
               <Link Id="NXQZ1v8Rfj7M07DcrV2VCQ" Ids="H2ZF7WWug3BLOTzIXH9oe4,OWIOJ3iLrapQMwmKgUri16" />
               <Link Id="NDno1jyB0veMYwJs6GpcSM" Ids="LuHuCkc8JNYQYm37Ai8Qob,QmPNLVrTUyqNdp8eNOL3xB" />
               <Link Id="TKmSD2KGEX4PrMqEWoaPYw" Ids="QHBKspI7OCQNwZURaI2iU6,VBpvJIFJaAcOkQNQeGzKjg" />
-              <Link Id="MUyHnFGmWpvMP18ODoqqyc" Ids="UfUp1P3zTV1LChJTcMxYcH,NGWQjvK27zqOD6LxxGOHwI" />
+              <Link Id="Ki6iBArNHwFNErhe9UWbpT" Ids="UfUp1P3zTV1LChJTcMxYcH,NGWQjvK27zqOD6LxxGOHwI" />
             </Patch>
           </Node>
           <Node Bounds="785,827,245,19" Id="AsFkKkCvU28Or5BmiscCeo">
@@ -988,7 +988,7 @@
               <Choice Kind="ProcessAppFlag" Name="PanCam" />
             </p:NodeReference>
             <Pin Id="Vi4hTQ6vJ4vPtwkOkvr4y5" Name="Enabled" Kind="InputPin" />
-            <Pin Id="R1z7zPvdtdsOlkblFegX5B" Name="Use Custom Aspect Ratio" Kind="InputPin" />
+            <Pin Id="R1z7zPvdtdsOlkblFegX5B" Name="Use Custom Aspect Ratio" Kind="InputPin" DefaultValue="False" />
             <Pin Id="RpxmSG5r4SYQANfa4ePANK" Name="Aspect Ratio" Kind="InputPin" />
             <Pin Id="UKXZChVPt5HMMriTVHPJ3E" Name="Show Helper" Kind="InputPin" />
             <Pin Id="UUc5XYG8FnFPBPtQu679CB" Name="ZPos" Kind="InputPin" />
@@ -1016,7 +1016,7 @@
               <Choice Kind="TypeFlag" Name="Int3" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="KplAJ5FnPTzOSQY2LUFt9x" Comment="Width" Bounds="799,143,35,43" ShowValueBox="true" isIOBox="true" Value="4, 4, 0">
+          <Pad Id="KplAJ5FnPTzOSQY2LUFt9x" Comment="Width" Bounds="799,143,35,43" ShowValueBox="true" isIOBox="true" Value="6.95, 6.95, 6.95">
             <p:TypeAnnotation LastCategoryFullName="3D" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Vector3" />
             </p:TypeAnnotation>
@@ -1080,7 +1080,7 @@
               <Choice Kind="TypeFlag" Name="Vector3" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="JZoXNsxj1uUM61fgwaVVBu" Comment="Translation" Bounds="1072,336,35,43" ShowValueBox="true" isIOBox="true" Value="0, 0, -2">
+          <Pad Id="JZoXNsxj1uUM61fgwaVVBu" Comment="Translation" Bounds="1072,336,35,43" ShowValueBox="true" isIOBox="true" Value="0, 0, 0">
             <p:TypeAnnotation LastCategoryFullName="3D" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Vector3" />
             </p:TypeAnnotation>
@@ -1135,7 +1135,7 @@
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="U21p5BG2FDtNNzyTGtdl5d" Comment="Output Maximum" Bounds="1347,428,35,15" ShowValueBox="true" isIOBox="true" Value="0.45">
+          <Pad Id="U21p5BG2FDtNNzyTGtdl5d" Comment="Output Maximum" Bounds="1347,428,35,15" ShowValueBox="true" isIOBox="true" Value="0.26">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
@@ -1150,11 +1150,51 @@
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="IpXoklNqSlqMnezCBCO3tK" Comment="Period" Bounds="1349,321,35,15" ShowValueBox="true" isIOBox="true" Value="2">
+          <Pad Id="IpXoklNqSlqMnezCBCO3tK" Comment="Period" Bounds="1349,321,35,15" ShowValueBox="true" isIOBox="true" Value="4.09">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
+          <Pad Id="IWHhYxskpCgNJvzI1qvYYE" Comment="Translation" Bounds="1009,172,35,43" ShowValueBox="true" isIOBox="true" Value="0, 0.09999999, -2.03">
+            <p:TypeAnnotation LastCategoryFullName="3D" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Vector3" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="973,462,80,19" Id="Jfyz0YU4wnbNmfSgWsJUPS">
+            <p:NodeReference LastCategoryFullName="Main.LoopTimer" LastSymbolSource="VL.LoopTool.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="GetLoopPhase" />
+            </p:NodeReference>
+            <Pin Id="LB4j0ZOJtbRNkOQl4fTNUa" Name="PhaseType" Kind="InputPin" DefaultValue="InOut" />
+            <Pin Id="CeIAytvFqlIPIOdlHwBv4m" Name="LoopPhase" Kind="OutputPin" />
+            <Pin Id="PhSPkFEODvlMUPIt6vwBKs" Name="LoopCycles" Kind="OutputPin" />
+            <Pin Id="Vs5XF4d7k95QUliVkVeL0p" Name="LoopOnNewCycle" Kind="OutputPin" />
+            <Pin Id="LLpx7o7qgp7QQDoSx2M5Oq" Name="LoopInOut" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="934,497,71,19" Id="Qi74RN7XeuaQRaiGep8JN0">
+            <p:NodeReference LastCategoryFullName="Main.LoopTimer" LastSymbolSource="VL.LoopTool.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="GetSubLoop" />
+            </p:NodeReference>
+            <Pin Id="AuwI8kxcgQ4NqWjFO6dBfP" Name="CustomSubLoop" Kind="InputPin" />
+            <Pin Id="KvKUTs8LpIHO43ZrMMll7J" Name="SubLoop" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="936,549" Id="FOaO12QMQo1MOEcGDdTeWv">
+            <p:NodeReference LastCategoryFullName="Main.LoopTimer.LoopTimer.SubLoop" LastSymbolSource="VL.LoopTool.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="RecordType" Name="SubLoop" />
+              <Choice Kind="OperationCallFlag" Name="Split" />
+            </p:NodeReference>
+            <Pin Id="Kii92vDrARrNAiNujGSqRE" Name="Input" Kind="StateInputPin" />
+            <Pin Id="ONPdZKt8UzwMTaTIvEZiYj" Name="SubLoopPhaseIn" Kind="OutputPin" />
+            <Pin Id="OPiUbrjBoVFMxYIMJ3M96Y" Name="SubLoopPhaseOut" Kind="OutputPin" />
+            <Pin Id="SMKsiXhzQtGORCKdFIuU66" Name="SubLoopPhaseInOut" Kind="OutputPin" />
+            <Pin Id="LUFCssna3JaOCU0Lty58xh" Name="SubLoopPhaseOutIn" Kind="OutputPin" />
+            <Pin Id="V1CQLy7wQFnPA4mANntnkL" Name="SubLoopInOut" Kind="OutputPin" />
+            <Pin Id="OF1cVgg2zUQNtZAoENvu3W" Name="SubLoopWidth" Kind="OutputPin" />
+            <Pin Id="H9bOBCTLaxnMb2IbCrDvHt" Name="SubLoopIndex" Kind="OutputPin" />
+            <Pin Id="S9tPrf3jEatO2XfJgpGYlq" Name="SubLoopCount" Kind="OutputPin" />
+          </Node>
         </Canvas>
         <Patch Id="FCQKADm6yBYLpkOkLqF2Fm" Name="Create" />
         <Patch Id="MYFq9ZIYTQ4PT3Fo4Ezt8H" Name="Update" />
@@ -1199,11 +1239,9 @@
         <Link Id="KJN8C36ubMkNcByi7iZgY1" Ids="Q0dijc9JHFyLZaJY06kE7u,DuzZW20OvnGLdhaN2xuhKP" />
         <Link Id="N3TATbzr5EvLhMDd4G4tXy" Ids="HDdq2sLUIhWLcVYjXdrYI7,R4x5fJigID1PEz9AoKTSO9" />
         <Link Id="HuRTzu6LlIBOLzuV4Tmxpf" Ids="IUfy3YBrVaqNvNIv7J3bnz,KvxGMHb8jYDPmoHPupeu1w" />
-        <Link Id="OUOeG6vRYyoQS18IBPgTJP" Ids="JZoXNsxj1uUM61fgwaVVBu,FjkbPKoaLisNHtYKaNzLEZ" />
         <Link Id="E5T9psSs4SINeo6ySOklGX" Ids="MQFGR1BkIGkMUxbicMnDRy,OwtOfenEeWpO6k65pOQI1g" />
         <Link Id="AyhUcHuhdkkOtYCAd5cBcw" Ids="FoOXpfySH82OquozSklpuo,FlXmNOitmOSLnBX4Yc2CNP" />
         <Link Id="FVelGKiCPmHLYeCSw2JkGj" Ids="TVLDUUcscjBMztDOUvaH4q,MypF4CzwRU6MbwPQM2Ekta" />
-        <Link Id="O4KfpjK0hWWMy2Gdc03PvP" Ids="Ot9GKWoF5eJN8XfzG2jsk9,FCGBGfZjIa8OUXTD4l1NAn" />
         <Link Id="RRkRDvdqd1XNsnTnl7HIJS" Ids="FtCw2AlkN7aPundGCntZVZ,JUy9EwgzKyYLvaIXKUV1VG" />
         <Link Id="RVmchoq6YgVPlcj7fEvY3H" Ids="U21p5BG2FDtNNzyTGtdl5d,ARJpprX0hKnPffEAoysmVS" />
         <Link Id="UttFGp5ivE7O0BZuuXTF9y" Ids="H4yPtOwDtbjNQovZmfFTNE,SBU2FrF4qEyP3k7pvCy3dn" />
@@ -1211,8 +1249,12 @@
         <Link Id="R9OShL5aN3hPgyxhiCVLh4" Ids="LtHqRDEO1woONrg45E0Udg,VY4dSjEetPCP3N5C5V1afZ" />
         <Link Id="Ih53TzhU6ALPrePbVP3iyK" Ids="JZoXNsxj1uUM61fgwaVVBu,UyU7m4Q2V8iOvVRndXExr4" />
         <Link Id="OKylWs6jXQAMZNr17TrRat" Ids="IpXoklNqSlqMnezCBCO3tK,HQy3UT0YIfCLpMtu99LDQU" />
+        <Link Id="VUnkVkCL7wwL1mmLQF8Ldq" Ids="IWHhYxskpCgNJvzI1qvYYE,FjkbPKoaLisNHtYKaNzLEZ" />
+        <Link Id="EIZuvKHSSTKLzFffv9BEHF" Ids="KvKUTs8LpIHO43ZrMMll7J,Kii92vDrARrNAiNujGSqRE" />
+        <Link Id="K4E0M8ZLBOtOWKvgOS56KD" Ids="ONPdZKt8UzwMTaTIvEZiYj,FCGBGfZjIa8OUXTD4l1NAn" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="SBQOevSkfVYPvjUXsK23Iy" Location="VL.Stride" Version="2021.4.9" />
+  <NugetDependency Id="SBQOevSkfVYPvjUXsK23Iy" Location="VL.Stride" Version="2021.4.10" />
+  <NugetDependency Id="GdSewXFGCUoLAwwXUSFx7f" Location="VL.LoopTool" Version="0.0.0.0" />
 </Document>
