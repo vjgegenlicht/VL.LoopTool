@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="L9ptbwdlTdKPp6PkE5ppHJ" LanguageVersion="2023.5.3-0228-gfb315638f6" Version="0.128">
-  <NugetDependency Id="KHAYBS4Q8WEMt1L0dYWpH8" Location="VL.CoreLib" Version="2023.5.3-0228-gfb315638f6" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="L9ptbwdlTdKPp6PkE5ppHJ" LanguageVersion="2023.5.3-0233-g35376658ae" Version="0.128">
+  <NugetDependency Id="KHAYBS4Q8WEMt1L0dYWpH8" Location="VL.CoreLib" Version="2023.5.3-0233-g35376658ae" />
   <Patch Id="KmkXvWndOxqQP9DvtVkOdv">
     <Canvas Id="FjlUaP8wREsL04LpIFXYMV" DefaultCategory="LoopTool.Presets" CanvasType="FullCategory">
       <Canvas Id="KZWbvRIeMWSMoXhxCFIFsc" Name="Cameras" Position="89,250" />
@@ -1161,6 +1161,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="V3n2gG1UYMTMQNJ7cIN9ef" Location="VL.Stride" Version="2023.5.3-0228-gfb315638f6" />
+  <NugetDependency Id="V3n2gG1UYMTMQNJ7cIN9ef" Location="VL.Stride" Version="2023.5.3-0233-g35376658ae" />
   <DocumentDependency Id="LOT2qJkWGBBPThhhnhYQDF" Location="../VL.LoopTool.vl" />
 </Document>
