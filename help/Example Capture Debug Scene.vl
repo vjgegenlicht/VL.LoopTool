@@ -242,7 +242,7 @@
             </p:NodeReference>
             <Pin Id="JdRWXUfTz1MNMrxZfByhtP" Name="LoopToolSettings" Kind="InputPin">
               <p:DefaultValue>
-                <LoopModel LoopTime="12" ManualMode="True" ManualValue="0.365183" />
+                <LoopModel CustomSubLoopCount="5" LoopTime="12" ManualMode="True" ManualValue="0.127946" WaitTime="1.25" />
                 <UtilModel />
                 <VideoModel>
                   <VideoResolution />
