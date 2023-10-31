@@ -243,8 +243,27 @@
             <Pin Id="JdRWXUfTz1MNMrxZfByhtP" Name="LoopToolSettings" Kind="InputPin">
               <p:DefaultValue>
                 <LoopModel CustomSubLoopCount="5" LoopTime="6.17" ManualValue="0.393443" WaitTime="1" />
+                <RecorderModel Path="E:\Captures\LoopToolTest">
+                  <Recorders>
+                    <ImageRecorder />
+                    <NRTSequenceRecorder FileTypeIndex="5">
+                      <FileTypes>
+                        <Item>Stride</Item>
+                        <Item>Dds</Item>
+                        <Item>Png</Item>
+                        <Item>Gif</Item>
+                        <Item>Jpg</Item>
+                        <Item>Bmp</Item>
+                        <Item>Tiff</Item>
+                        <Item>Wmp</Item>
+                        <Item>Tga</Item>
+                      </FileTypes>
+                    </NRTSequenceRecorder>
+                    <VideoRecorder />
+                  </Recorders>
+                </RecorderModel>
                 <UtilModel BlendTime="0.69" OrbitCamera="True" />
-                <VideoModel CustomResX="13" CustomResY="13" FPS="60" ScreenIndex="2" VideoResolutionIndex="2">
+                <VideoModel CustomResX="13" CustomResY="13" LeftDRight="True" ScreenIndex="2" VideoResolutionIndex="2">
                   <ScreenNames>
                     <Item>\\.\DISPLAY1</Item>
                     <Item>\\.\DISPLAY2</Item>
@@ -1037,45 +1056,6 @@
             <Pin Id="U6Gy4xMFFwWNA64PlWAWkL" Name="LoopOnNewCycle" Kind="OutputPin" />
             <Pin Id="GEMmkBJKpzvMUJDoEWxcZ1" Name="LoopInOut" Kind="OutputPin" />
           </Node>
-          <!--
-
-    ************************ BlendTextureFXChain ************************
-
--->
-          <Node Name="BlendTextureFXChain" Bounds="602,860" Id="QBpYhABpCJRMbcmrVpFHOT">
-            <p:NodeReference>
-              <Choice Kind="ClassDefinition" Name="Class" />
-              <CategoryReference Kind="Category" Name="Primitive" />
-            </p:NodeReference>
-            <p:Interfaces>
-              <TypeReference LastCategoryFullName="Main.LoopRenderer" LastDependency="VL.LoopTool.vl">
-                <Choice Kind="InterfaceTypeFlag" Name="ITextureFXChain" />
-              </TypeReference>
-            </p:Interfaces>
-            <Patch Id="QW5vh4wed93MFriO2VvKUH">
-              <Canvas Id="Bo3En02g7XpMvJDGe8GzmA" CanvasType="Group">
-                <Node Bounds="192,262,236,344" Id="VVr7V49xtCULdHByIUjIW4">
-                  <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
-                    <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
-                    <CategoryReference Kind="Category" Name="Primitive" />
-                    <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
-                  </p:NodeReference>
-                  <Pin Id="UVmp202dzW0QSBrZbIqPaJ" Name="Break" Kind="OutputPin" />
-                  <Patch Id="BY9Z7EPuvmcLMXfaIIhKQK" ManuallySortedPins="true">
-                    <Patch Id="FnyC4XIG8o7NFEctJcwCQH" Name="Create" ManuallySortedPins="true" />
-                    <Patch Id="Ch5vw9wB0K3LCzmZlnMsMb" Name="Update" ManuallySortedPins="true" />
-                    <Patch Id="A6Dw5SkgQTvN4RqW25pRH3" Name="Dispose" ManuallySortedPins="true" />
-                  </Patch>
-                </Node>
-              </Canvas>
-              <ProcessDefinition Id="MWtYzkWHvhrLiNFtBQG5Lw">
-                <Fragment Id="Brnf8HlVbjYMxADFXPsLKh" Patch="O1KZo9JnTwdMyVqAYMr1oY" Enabled="true" />
-                <Fragment Id="HojnFpR5JmGPqPyWphIlNV" Patch="Q0mQOopMZ6tQbPutgKvXeh" Enabled="true" />
-              </ProcessDefinition>
-              <Patch Id="O1KZo9JnTwdMyVqAYMr1oY" Name="Create" />
-              <Patch Id="Q0mQOopMZ6tQbPutgKvXeh" Name="Update" />
-            </Patch>
-          </Node>
           <Node Bounds="561,1570,65,19" Id="DUkG7I8E4paM6h6iEV1sQG">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -1210,6 +1190,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
+          <Pad Id="Mh6XGr20GkRPZWEIHJt6Sk" Comment="LoopPhase" Bounds="598,235,35,15" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <Patch Id="FCQKADm6yBYLpkOkLqF2Fm" Name="Create" />
         <Patch Id="MYFq9ZIYTQ4PT3Fo4Ezt8H" Name="Update" />
@@ -1304,6 +1285,7 @@
         <Link Id="AwaP8oQDeJyQBLPfXWXJn2" Ids="U2MFeyji575Oe1j3YmeC9B,FU4xnnsAkjeLsaRPAFeR0U" />
         <Link Id="Ko9z8HsxbABOD7evuPuCEm" Ids="HIlbckzcTXfQJCkHiwChTc,VI6BnJxve2DNRwQCFbcNPc" />
         <Link Id="L35e9Sx5tNmLi7Aeb4TcPg" Ids="OcTrcne41XdLt8Fsx69G4w,IzUPYRpAdP6NrUNmdBD617" />
+        <Link Id="G3BojeNO316QHYZ5ckplmH" Ids="JflUTRQjx1sMixOv4PQCQV,Mh6XGr20GkRPZWEIHJt6Sk" />
       </Patch>
     </Node>
   </Patch>

@@ -639,7 +639,7 @@
               <ControlPoint Id="BKCkfIoBcGqPvTv5h77HbX" Bounds="133,397" />
               <Pad Id="DsuUfl3MnvfQGIwIJu4hP4" SlotId="FLXZhdtlrDWPp6PZhNRh8Y" Bounds="133,233" />
               <Pad Id="V7p8VSOEx0tLC5O2oPVs1U" SlotId="PnbQLkY5iTvPUei1yPpUZo" Bounds="133,372" />
-              <Node Bounds="130,336,145,19" Id="RI6vdSyylr5POCp9gihvCY">
+              <Node Bounds="130,336,265,19" Id="RI6vdSyylr5POCp9gihvCY">
                 <p:NodeReference LastCategoryFullName="Stride.Textures.Filter" LastDependency="VL.Stride.Rendering.EffectShaderNodes">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="Category" Name="Textures" />
@@ -671,7 +671,7 @@
                   <Choice Kind="TypeFlag" Name="Vector2" />
                 </p:TypeAnnotation>
               </Pad>
-              <Node Bounds="132,247,85,19" Id="U4wq0Nww1jbNMIPgWHzgzO">
+              <Node Bounds="132,247,205,19" Id="U4wq0Nww1jbNMIPgWHzgzO">
                 <p:NodeReference LastCategoryFullName="Stride.Textures.Filter" LastDependency="VL.Stride.Rendering.EffectShaderNodes">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="Category" Name="Textures" />
