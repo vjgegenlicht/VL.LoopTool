@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="Nth8CFNZnXsMdw6DOponQ2" LanguageVersion="2023.5.3-0233-g35376658ae" Version="0.128">
-  <NugetDependency Id="P31TcB21GpsQMoE5avRDIK" Location="VL.CoreLib" Version="2023.5.3-0233-g35376658ae" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="Nth8CFNZnXsMdw6DOponQ2" LanguageVersion="2023.5.3-0228-gfb315638f6" Version="0.128">
+  <NugetDependency Id="P31TcB21GpsQMoE5avRDIK" Location="VL.CoreLib" Version="2023.5.3-0228-gfb315638f6" />
   <Patch Id="KwF3lactQFAPXQKeExxGTJ">
     <Canvas Id="SY42jCjyWwzNXSZcNcrit7" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -15,7 +15,7 @@
       </p:NodeReference>
       <Patch Id="Qr4zBk43K2ALddqEWP5b4t">
         <Canvas Id="HLRPJWUCmaxNVqKXsb1yjL" CanvasType="Group">
-          <Node Bounds="388,1531,205,19" Id="H7Elca8hRQqQNwVvpFiB4l">
+          <Node Bounds="378,1547,205,19" Id="H7Elca8hRQqQNwVvpFiB4l">
             <p:NodeReference LastCategoryFullName="Stride.Lights" LastDependency="VL.Stride.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="SkyboxLight" />
@@ -235,72 +235,7 @@
             <Pin Id="Ao8KhV3Ucq3NLvJh6dIJLR" Name="Count" Kind="InputPin" />
             <Pin Id="SS6bepiXTHAPROsaaCFJqb" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="257,1607,352,19" Id="GKj8jg7WZhnLRjAPVu3NUf">
-            <p:NodeReference LastCategoryFullName="Main.LoopRenderer" LastDependency="VL.LoopTool.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="SceneWindow (LoopTools)" />
-            </p:NodeReference>
-            <Pin Id="JdRWXUfTz1MNMrxZfByhtP" Name="LoopToolSettings" Kind="InputPin">
-              <p:DefaultValue>
-                <LoopModel CustomSubLoopCount="5" LoopTime="6.17" ManualValue="0.393443" WaitTime="1" />
-                <RecorderModel Path="E:\Captures\LoopToolTest">
-                  <Recorders>
-                    <ImageRecorder />
-                    <NRTSequenceRecorder FileTypeIndex="5">
-                      <FileTypes>
-                        <Item>Stride</Item>
-                        <Item>Dds</Item>
-                        <Item>Png</Item>
-                        <Item>Gif</Item>
-                        <Item>Jpg</Item>
-                        <Item>Bmp</Item>
-                        <Item>Tiff</Item>
-                        <Item>Wmp</Item>
-                        <Item>Tga</Item>
-                      </FileTypes>
-                    </NRTSequenceRecorder>
-                    <VideoRecorder />
-                  </Recorders>
-                </RecorderModel>
-                <UtilModel BlendTime="0.69" OrbitCamera="True" />
-                <VideoModel CustomResX="13" CustomResY="13" LeftDRight="True" ScreenIndex="2" VideoResolutionIndex="2">
-                  <ScreenNames>
-                    <Item>\\.\DISPLAY1</Item>
-                    <Item>\\.\DISPLAY2</Item>
-                    <Item>\\.\DISPLAY3</Item>
-                  </ScreenNames>
-                  <VideoResolution AspectX="1" AspectXY="1, 1" AspectY="1" Name="Large NFT 1:1 1920*1920" Resolution="1920, 1920" />
-                  <VideoResolutionNames>
-                    <Item>Instagram 1:1 1080*1080</Item>
-                    <Item>Instagram Reel 9:16 1080*1920</Item>
-                    <Item>Large NFT 1:1 1920*1920</Item>
-                    <Item>Twitter 1:1 720*720 </Item>
-                    <Item>Mastodon 1:1 1280*1280</Item>
-                  </VideoResolutionNames>
-                  <VideoResolutions>
-                    <Item AspectX="1" AspectXY="1, 1" AspectY="1" Name="Instagram 1:1 1080*1080" Resolution="1080, 1080" />
-                    <Item AspectX="0.5625" AspectXY="9, 16" AspectY="1.7777778" Name="Instagram Reel 9:16 1080*1920" Resolution="1080, 1920" />
-                    <Item AspectX="1" AspectXY="1, 1" AspectY="1" Name="Large NFT 1:1 1920*1920" Resolution="1920, 1920" />
-                    <Item AspectX="1" AspectXY="1, 1" AspectY="1" Name="Twitter 1:1 720*720 " Resolution="720, 720" />
-                    <Item AspectX="1" AspectXY="1, 1" AspectY="1" Name="Mastodon 1:1 1280*1280" Resolution="1280, 1280" />
-                  </VideoResolutions>
-                </VideoModel>
-              </p:DefaultValue>
-            </Pin>
-            <Pin Id="RLJv7WucHPFQCdZeUwDS9v" Name="Node Context" Kind="InputPin" />
-            <Pin Id="MkEfUen8IHnMjUBGXxcaRV" Name="Scene" Kind="InputPin" />
-            <Pin Id="FQUO7b7ReNePkeDVI9nYQ8" Name="Lighting" Kind="InputPin" />
-            <Pin Id="FU4xnnsAkjeLsaRPAFeR0U" Name="Camera" Kind="InputPin" />
-            <Pin Id="VI6BnJxve2DNRwQCFbcNPc" Name="CameraComponent" Kind="InputPin" />
-            <Pin Id="JtuhNntth3rOypD5GmBQh1" Name="Post Effects" Kind="InputPin" />
-            <Pin Id="TEfApZTzDzrMvAMocRlgxP" Name="TextureFXChain" Kind="InputPin" />
-            <Pin Id="A20gM7iW6NsP1oOdslWSXF" Name="TextureFXChains" Kind="InputPin" />
-            <Pin Id="UL8XJ2XZltsNWeE0HDv4y4" Name="Input Source" Kind="OutputPin" />
-            <Pin Id="QdRFvAWf9TQQG20TnOaiz4" Name="Resolution" Kind="OutputPin" />
-            <Pin Id="IFZbMk8f4CeM2XegmYd7HZ" Name="Client Bounds" Kind="OutputPin" />
-            <Pin Id="RaAZgKx1EzvQEKMkdXaCLR" Name="GameWindow" Kind="OutputPin" />
-          </Node>
-          <Node Bounds="431,1500,325,19" Id="PbKANKqsBIPPyKnpV1aiG7">
+          <Node Bounds="405,1512,325,19" Id="PbKANKqsBIPPyKnpV1aiG7">
             <p:NodeReference LastCategoryFullName="Stride.Cameras" LastDependency="VL.Stride.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="OrbitCamera" />
@@ -367,7 +302,7 @@
             <Pin Id="J4AyLzznZjWO1iy4LvTgu2" Name="LoopOnNewCycle" Kind="OutputPin" />
             <Pin Id="Rt4HYTnloJLNRF1VyL0KSg" Name="LoopInOut" Kind="OutputPin" />
           </Node>
-          <Node Bounds="318,1407,85,19" Id="QmPNTTyOxYpLqMgc50YccL">
+          <Node Bounds="344,1460,85,19" Id="QmPNTTyOxYpLqMgc50YccL">
             <p:NodeReference LastCategoryFullName="Stride" LastDependency="VL.Stride.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Group" />
@@ -381,7 +316,7 @@
             <Pin Id="C5rMJlZb16XPKxerNKc8DB" Name="Enabled" Kind="InputPin" />
             <Pin Id="TML2wnfZlKCOokbzx5OJoV" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="JEa1hlKCkUrPlCZvGTvaTa" Comment="Index" Bounds="575,1167,39,74" ShowValueBox="true" isIOBox="true" Value="3">
+          <Pad Id="JEa1hlKCkUrPlCZvGTvaTa" Comment="Index" Bounds="578,1205,39,74" ShowValueBox="true" isIOBox="true" Value="3">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
@@ -1056,7 +991,7 @@
             <Pin Id="U6Gy4xMFFwWNA64PlWAWkL" Name="LoopOnNewCycle" Kind="OutputPin" />
             <Pin Id="GEMmkBJKpzvMUJDoEWxcZ1" Name="LoopInOut" Kind="OutputPin" />
           </Node>
-          <Node Bounds="561,1570,65,19" Id="DUkG7I8E4paM6h6iEV1sQG">
+          <Node Bounds="603,1565,65,19" Id="DUkG7I8E4paM6h6iEV1sQG">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
@@ -1133,7 +1068,7 @@
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="656,1189,129,19" Id="SpRMJqm2TqlQdq9J6j0ckg">
+          <Node Bounds="659,1227,129,19" Id="SpRMJqm2TqlQdq9J6j0ckg">
             <p:NodeReference LastCategoryFullName="Main.Presets.TextureFXChain" LastDependency="VL.LoopTool.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="CloudyDepthFeedbackFX (TextureFXChain)" />
@@ -1142,7 +1077,7 @@
             <Pin Id="IBZZDvN7f7mNw387p9yfQr" Name="Update" Kind="InputPin" />
             <Pin Id="QkL8EE3h9acOJhmMyrBh24" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Node Bounds="574,1299,335,19" Id="Qi64iv1xUfNOiuIp0GCowq">
+          <Node Bounds="577,1337,335,19" Id="Qi64iv1xUfNOiuIp0GCowq">
             <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Switch" />
@@ -1155,7 +1090,7 @@
             <Pin Id="KUKZKe7PJTLQFdcNA1btQz" Name="Input 3" Kind="InputPin" />
             <Pin Id="QBSpbx63ePkN8Ns3eyfpjq" Name="Input 4" Kind="InputPin" />
           </Node>
-          <Node Bounds="821,1246,96,19" Id="RKjAS7urDS3MlGiVM29nWo">
+          <Node Bounds="824,1284,96,19" Id="RKjAS7urDS3MlGiVM29nWo">
             <p:NodeReference LastCategoryFullName="Main.Presets.TextureFXChain" LastDependency="VL.LoopTool.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="VectrexArcadeFX (TextureFXChain)" />
@@ -1164,7 +1099,7 @@
             <Pin Id="Lmtj42nKoPiQJMZprrL0U3" Name="Update" Kind="ApplyPin" />
             <Pin Id="AtBOLNq1oOvLn84Mn3z0MX" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Node Bounds="904,1270,48,19" Id="GYSD4gve7ovOC4uiwCpg1R">
+          <Node Bounds="907,1308,48,19" Id="GYSD4gve7ovOC4uiwCpg1R">
             <p:NodeReference LastCategoryFullName="Main.Presets.TextureFXChain" LastDependency="VL.LoopTool.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="SnesFx (TextureFXChain)" />
@@ -1173,7 +1108,7 @@
             <Pin Id="GcbxjQhqFAzNPgTFT42RDt" Name="Update" Kind="ApplyPin" />
             <Pin Id="SZwHFDcQqUuNvgtyXZzyS3" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Node Bounds="737,1220,90,19" Id="J8Qk3l8Go9qMhUEN4atVt4">
+          <Node Bounds="740,1258,90,19" Id="J8Qk3l8Go9qMhUEN4atVt4">
             <p:NodeReference LastCategoryFullName="Main.Presets.TextureFXChain" LastDependency="VL.LoopTool.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="MangaOutlineFX (TextureFXChain)" />
@@ -1182,7 +1117,7 @@
             <Pin Id="L7XzcMVqH6eM55513ui3uQ" Name="Update" Kind="ApplyPin" />
             <Pin Id="Tx1ILt6JKbgMyviPSwIEJX" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Pad Id="OcTrcne41XdLt8Fsx69G4w" Comment="Auto Fetch Input Source" Bounds="629,1440,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="OcTrcne41XdLt8Fsx69G4w" Comment="Auto Fetch Input Source" Bounds="606,1467,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -1191,6 +1126,25 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="Mh6XGr20GkRPZWEIHJt6Sk" Comment="LoopPhase" Bounds="598,235,35,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="321,1612,165,19" Id="BN60kmhlAVQMfc5JOKVlaM">
+            <p:NodeReference LastCategoryFullName="LoopTool" LastDependency="VL.LoopTool.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="SceneWindow (LoopTools)" />
+            </p:NodeReference>
+            <Pin Id="Jk1yY8UNvJMMX2Vhg9clbO" Name="LoopToolSettings" Kind="InputPin" />
+            <Pin Id="Hl6p9GpB61HMvMvxatTs4d" Name="Node Context" Kind="InputPin" />
+            <Pin Id="BHMzmEw9781Mf9AokryQmw" Name="Scene" Kind="InputPin" />
+            <Pin Id="RKfmJkghfAON1dcz3CRYCc" Name="Lighting" Kind="InputPin" />
+            <Pin Id="IP9Vl7f3SSINHpQjoKgLz2" Name="Camera" Kind="InputPin" />
+            <Pin Id="IKjlECoKJXfNSK3w5FQgV8" Name="CameraComponent" Kind="InputPin" />
+            <Pin Id="AC6FmDbwRNQMNVfmRxUFmi" Name="Post Effects" Kind="InputPin" />
+            <Pin Id="EV51HYTQao7NIuwMH07Vk8" Name="TextureFXChain" Kind="InputPin" />
+            <Pin Id="GD8yXW4lbOaMB0HR6Um63x" Name="TextureFXChains" Kind="InputPin" />
+            <Pin Id="DEILGwtJbePQWJAns4OX3s" Name="Input Source" Kind="OutputPin" />
+            <Pin Id="FmTDfrt3qTROwljcVGy2Je" Name="Resolution" Kind="OutputPin" />
+            <Pin Id="H7SivppWWzPMQQjkMEg8YD" Name="Client Bounds" Kind="OutputPin" />
+            <Pin Id="Moo69s6WycONuYOm8qCS31" Name="GameWindow" Kind="OutputPin" />
+          </Node>
         </Canvas>
         <Patch Id="FCQKADm6yBYLpkOkLqF2Fm" Name="Create" />
         <Patch Id="MYFq9ZIYTQ4PT3Fo4Ezt8H" Name="Update" />
@@ -1212,7 +1166,6 @@
         <Link Id="SaB1qBgyN4tN2L4ExDvDj3" Ids="B5LaPYAsH42QAzV7Lp2gqG,LJhkVIYLEgNLQmOGXRCaV9" />
         <Link Id="JUwoW3V1wuZOlxljnc9cfl" Ids="Iis0mfwRw3iMF0T13WOCOH,UfFZK0jn7DtOJoRQaMZsPr" />
         <Link Id="Gl0eIugGqGXOI9tGOXiD0X" Ids="NZzlH81mRIzPQDnwHrg49q,KKSmfRJrRNLLCv7G9mU0nw" />
-        <Link Id="GcIJm9B45jzL6AIOXwvQ29" Ids="HZhmR0yS5ZALI5JIEF6egS,FQUO7b7ReNePkeDVI9nYQ8" />
         <Link Id="PYkFTp6GMSoL94z49Od41h" Ids="FPjuqBBMLMdOx38tyxJ70o,PoqHVdpsoy3LUzQUuOiVZN" />
         <Link Id="KPBgaek6XPcMciy72UE53t" Ids="KbsYdaPhMRRPqmxz4qpvM3,LbGogbPvSQKQAclaxriXZd" />
         <Link Id="VieYhC3tMpnOi7vfK0Ynrv" Ids="GRXgp17DabfMFcdBHxAJvB,BYaKLcjGQ9AP8AwY8nBlcY" />
@@ -1227,7 +1180,6 @@
         <Link Id="C2ZseB2yyNqQKvs7msQNQX" Ids="II12RF7eTKqOYfIzubT4ck,J1UbT6EJWcvLIIDAnWh0yQ" />
         <Link Id="FpdUQtODW0uOKrGMj4tNeW" Ids="R1S0wpakvAwM87U5MGgdJO,ELYI83Oow0zMzF0OIgQr1C" />
         <Link Id="GxUrF70US1mN0PZVD6YFAX" Ids="JflUTRQjx1sMixOv4PQCQV,FkEIwGhyVh2QdIZNv4xbKU" />
-        <Link Id="QC8ocXXufwEMQF2HVLprB8" Ids="TML2wnfZlKCOokbzx5OJoV,MkEfUen8IHnMjUBGXxcaRV" />
         <Link Id="ID7L9iJun14MSj8NxnIYBJ" Ids="JEa1hlKCkUrPlCZvGTvaTa,QwGi8T4u3f3OqIzW2lPlV4" />
         <Link Id="MTTIEUnBDu1QEhdUWtc0Us" Ids="QkL8EE3h9acOJhmMyrBh24,GdNAMvHZg9yOrEFeJFBYzW" />
         <Link Id="Rop9jYeZgOIQSBk4RP156d" Ids="S1IykWTN5q1LwUOa0cUZk7,PBu7Tmq3ILcQLkPojNHEJ4" />
@@ -1276,20 +1228,20 @@
         <Link Id="PkOjP9Xny8fN2p7XEmQxaR" Ids="Dw88qaUehyTLv1zdN0jugu,RZ947yrqlPqQZMWqMMXJOV" />
         <Link Id="UcRhWp042QqL89AHw2HOw4" Ids="A6urGOpCXVUO0focLTf7MT,B2pm7ShguEJMRphS6kFVHN" />
         <Link Id="MPu7illq1hdLbmmGOYOEFL" Ids="AXEzscebubAP7HGUWRcTxH,BLvqtDDp3bVLdmz82YttK7" />
-        <Link Id="AHYpDb37UOgLfHYgWizDVu" Ids="IQCYcMk0sakLMa9fKVfXul,A20gM7iW6NsP1oOdslWSXF" />
         <Link Id="L69DyaYMEaGLydHLM5DWPt" Ids="GvOUH88A13fMowpLFqSEfv,CotKYJoK729PtheSpdVIG5" />
         <Link Id="QjbgGiNZpNvPbX7QBjLXed" Ids="Tx1ILt6JKbgMyviPSwIEJX,AvuAFoAb69qOI5OPFgAuNO" />
         <Link Id="Fb6mh37MGWpO7Aj0Fq12wo" Ids="AtBOLNq1oOvLn84Mn3z0MX,KUKZKe7PJTLQFdcNA1btQz" />
         <Link Id="AC8D0VeFeA3LNnJBH31U7e" Ids="SZwHFDcQqUuNvgtyXZzyS3,QBSpbx63ePkN8Ns3eyfpjq" />
-        <Link Id="Tx480qq0L3PPjSfJ5Xq7wp" Ids="GvOUH88A13fMowpLFqSEfv,TEfApZTzDzrMvAMocRlgxP" />
-        <Link Id="AwaP8oQDeJyQBLPfXWXJn2" Ids="U2MFeyji575Oe1j3YmeC9B,FU4xnnsAkjeLsaRPAFeR0U" />
-        <Link Id="Ko9z8HsxbABOD7evuPuCEm" Ids="HIlbckzcTXfQJCkHiwChTc,VI6BnJxve2DNRwQCFbcNPc" />
         <Link Id="L35e9Sx5tNmLi7Aeb4TcPg" Ids="OcTrcne41XdLt8Fsx69G4w,IzUPYRpAdP6NrUNmdBD617" />
         <Link Id="G3BojeNO316QHYZ5ckplmH" Ids="JflUTRQjx1sMixOv4PQCQV,Mh6XGr20GkRPZWEIHJt6Sk" />
+        <Link Id="L5HxmYlXpUsNqlJLTQNfsJ" Ids="TML2wnfZlKCOokbzx5OJoV,BHMzmEw9781Mf9AokryQmw" />
+        <Link Id="I5aDRcFx9FOLGBnSih5tqT" Ids="HZhmR0yS5ZALI5JIEF6egS,RKfmJkghfAON1dcz3CRYCc" />
+        <Link Id="NrHhQC7DEqsLEBGuGPzDtI" Ids="U2MFeyji575Oe1j3YmeC9B,IP9Vl7f3SSINHpQjoKgLz2" />
+        <Link Id="M9WsMhUiANZMTGolBIHlF9" Ids="IQCYcMk0sakLMa9fKVfXul,GD8yXW4lbOaMB0HR6Um63x" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="SBQOevSkfVYPvjUXsK23Iy" Location="VL.Stride" Version="2023.5.3-0233-g35376658ae" />
+  <NugetDependency Id="SBQOevSkfVYPvjUXsK23Iy" Location="VL.Stride" Version="2023.5.3-0228-gfb315638f6" />
   <DocumentDependency Id="JhggNlBriecOf0FrfwEvIT" Location="../VL.LoopTool.vl" />
   <NugetDependency Id="Vfyx0KYIRfIMF8bKvTlC9K" Location="VL.Fuse" Version="0.0.0.0" />
   <PlatformDependency Id="FD4OkSloAe3OfGA5uB5rDf" Location="System.Windows.Forms" />
