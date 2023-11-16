@@ -1190,9 +1190,11 @@
             <Pin Id="Jk1yY8UNvJMMX2Vhg9clbO" Name="LoopToolSettings" Kind="InputPin">
               <p:DefaultValue>
                 <LoopModel LoopTime="2.87" ManualValue="1" />
-                <RecorderModel Filename="LOOP" Path="E:\Captures\LoopToolTest" RecorderIndex="2">
+                <RecorderModel Filename="LOOP" Path="E:\Captures\LoopToolTest">
                   <Recorders>
-                    <ImageRecorder />
+                    <ImageRecorder OutputPath="">
+                      <FileTypes />
+                    </ImageRecorder>
                     <NRTSequenceRecorder FileTypeIndex="2" FPS="60" OutputPath="E:\Captures\LoopToolTest\LOOP\NRT\" ResMultiplier="1">
                       <FileTypes>
                         <Item>Stride</Item>
@@ -1206,18 +1208,18 @@
                         <Item>Tga</Item>
                       </FileTypes>
                     </NRTSequenceRecorder>
-                    <VideoRecorder />
+                    <VideoRecorder FPS="60" MicVolume="0.583" OutputPath="E:\Captures\LoopToolTest\LOOP\Video\" />
                   </Recorders>
                 </RecorderModel>
                 <UtilModel BlendTime="0.72" />
-                <VideoModel LeftRight="True" ScreenIndex="2">
+                <VideoModel LeftRight="True" ScreenIndex="2" VideoResolutionIndex="1">
                   <ScreenNames>
                     <Item>\\.\DISPLAY1</Item>
                     <Item>\\.\DISPLAY2</Item>
                     <Item>\\.\DISPLAY3</Item>
                   </ScreenNames>
                   <Screens />
-                  <VideoResolution AspectX="1" AspectXY="1, 1" AspectY="1" Name="Instagram 1:1 1080*1080" Resolution="1080, 1080" />
+                  <VideoResolution AspectX="0.5625" AspectXY="9, 16" AspectY="1.7777778" Name="Instagram Reel 9:16 1080*1920" Resolution="1080, 1920" />
                   <VideoResolutionNames>
                     <Item>Instagram 1:1 1080*1080</Item>
                     <Item>Instagram Reel 9:16 1080*1920</Item>
