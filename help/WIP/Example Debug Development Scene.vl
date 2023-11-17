@@ -1189,7 +1189,7 @@
             </p:NodeReference>
             <Pin Id="Jk1yY8UNvJMMX2Vhg9clbO" Name="LoopToolSettings" Kind="InputPin">
               <p:DefaultValue>
-                <LoopModel CustomSubLoopCount="4" LoopTime="2.87" ManualValue="1" />
+                <LoopModel CustomSubLoopCount="5" LoopTime="5.5" ManualValue="0.246622" />
                 <RecorderModel Filename="LOOP" Path="E:\Captures\LoopToolTest">
                   <Recorders>
                     <ImageRecorder OutputPath="E:\Captures\LoopToolTest\LOOP\Image\" ResMultiplier="6">
@@ -1222,7 +1222,7 @@
                   </Recorders>
                 </RecorderModel>
                 <UtilModel BlendTime="0.72" />
-                <VideoModel LeftRight="True" ScreenIndex="2" VideoResolutionIndex="1">
+                <VideoModel CustomResX="10000" LeftRight="True" ScreenIndex="2" VideoResolutionIndex="1">
                   <ScreenNames>
                     <Item>\\.\DISPLAY1</Item>
                     <Item>\\.\DISPLAY2</Item>
@@ -1414,7 +1414,7 @@
             <Pin Id="VvURnJP7ueMOta09XSQYyK" Name="Center" Kind="InputPin" />
             <Pin Id="FRAbFgu3pXwMq2mEVNF2NS" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="VwNP6IAcJ57OTcEZWSIsEy" Comment="Size" Bounds="554,1361,35,28" ShowValueBox="true" isIOBox="true" Value="1, 1">
+          <Pad Id="VwNP6IAcJ57OTcEZWSIsEy" Comment="Size" Bounds="440,1324,35,28" ShowValueBox="true" isIOBox="true" Value="1, 1">
             <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Vector2" />
             </p:TypeAnnotation>
