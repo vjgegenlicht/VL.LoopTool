@@ -1189,11 +1189,21 @@
             </p:NodeReference>
             <Pin Id="Jk1yY8UNvJMMX2Vhg9clbO" Name="LoopToolSettings" Kind="InputPin">
               <p:DefaultValue>
-                <LoopModel LoopTime="2.87" ManualValue="1" />
+                <LoopModel CustomSubLoopCount="4" LoopTime="2.87" ManualValue="1" />
                 <RecorderModel Filename="LOOP" Path="E:\Captures\LoopToolTest">
                   <Recorders>
-                    <ImageRecorder OutputPath="">
-                      <FileTypes />
+                    <ImageRecorder OutputPath="E:\Captures\LoopToolTest\LOOP\Image\" ResMultiplier="6">
+                      <FileTypes>
+                        <Item>Stride</Item>
+                        <Item>Dds</Item>
+                        <Item>Png</Item>
+                        <Item>Gif</Item>
+                        <Item>Jpg</Item>
+                        <Item>Bmp</Item>
+                        <Item>Tiff</Item>
+                        <Item>Wmp</Item>
+                        <Item>Tga</Item>
+                      </FileTypes>
                     </ImageRecorder>
                     <NRTSequenceRecorder FileTypeIndex="2" FPS="60" OutputPath="E:\Captures\LoopToolTest\LOOP\NRT\" ResMultiplier="1">
                       <FileTypes>
@@ -1208,7 +1218,7 @@
                         <Item>Tga</Item>
                       </FileTypes>
                     </NRTSequenceRecorder>
-                    <VideoRecorder FPS="60" MicVolume="0.583" OutputPath="E:\Captures\LoopToolTest\LOOP\Video\" />
+                    <VideoRecorder FPS="60" MicVolume="1" OutputPath="E:\Captures\LoopToolTest\LOOP\Video\" />
                   </Recorders>
                 </RecorderModel>
                 <UtilModel BlendTime="0.72" />
