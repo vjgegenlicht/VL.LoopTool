@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="Nth8CFNZnXsMdw6DOponQ2" LanguageVersion="2023.5.3-0294-g08cfc6dc6d" Version="0.128">
-  <NugetDependency Id="P31TcB21GpsQMoE5avRDIK" Location="VL.CoreLib" Version="2023.5.3-0294-g08cfc6dc6d" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="Nth8CFNZnXsMdw6DOponQ2" LanguageVersion="2023.5.3-0302-gab7ef9c671" Version="0.128">
+  <NugetDependency Id="P31TcB21GpsQMoE5avRDIK" Location="VL.CoreLib" Version="2023.5.3-0302-gab7ef9c671" />
   <Patch Id="KwF3lactQFAPXQKeExxGTJ">
     <Canvas Id="SY42jCjyWwzNXSZcNcrit7" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -1187,66 +1187,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="SceneWindow (LoopTool)" />
             </p:NodeReference>
-            <Pin Id="Jk1yY8UNvJMMX2Vhg9clbO" Name="LoopToolSettings" Kind="InputPin">
-              <p:DefaultValue>
-                <LoopModel CustomSubLoopCount="5" LoopTime="5.5" ManualValue="0.246622" />
-                <RecorderModel Filename="LOOP" Path="E:\Captures\LoopToolTest">
-                  <Recorders>
-                    <ImageRecorder OutputPath="E:\Captures\LoopToolTest\LOOP\Image\" ResMultiplier="6">
-                      <FileTypes>
-                        <Item>Stride</Item>
-                        <Item>Dds</Item>
-                        <Item>Png</Item>
-                        <Item>Gif</Item>
-                        <Item>Jpg</Item>
-                        <Item>Bmp</Item>
-                        <Item>Tiff</Item>
-                        <Item>Wmp</Item>
-                        <Item>Tga</Item>
-                      </FileTypes>
-                    </ImageRecorder>
-                    <NRTSequenceRecorder FileTypeIndex="2" FPS="60" OutputPath="E:\Captures\LoopToolTest\LOOP\NRT\" ResMultiplier="1">
-                      <FileTypes>
-                        <Item>Stride</Item>
-                        <Item>Dds</Item>
-                        <Item>Png</Item>
-                        <Item>Gif</Item>
-                        <Item>Jpg</Item>
-                        <Item>Bmp</Item>
-                        <Item>Tiff</Item>
-                        <Item>Wmp</Item>
-                        <Item>Tga</Item>
-                      </FileTypes>
-                    </NRTSequenceRecorder>
-                    <VideoRecorder FPS="60" MicVolume="1" OutputPath="E:\Captures\LoopToolTest\LOOP\Video\" />
-                  </Recorders>
-                </RecorderModel>
-                <UtilModel BlendTime="0.72" />
-                <VideoModel CustomResX="10000" LeftRight="True" ScreenIndex="2" VideoResolutionIndex="1">
-                  <ScreenNames>
-                    <Item>\\.\DISPLAY1</Item>
-                    <Item>\\.\DISPLAY2</Item>
-                    <Item>\\.\DISPLAY3</Item>
-                  </ScreenNames>
-                  <Screens />
-                  <VideoResolution AspectX="0.5625" AspectXY="9, 16" AspectY="1.7777778" Name="Instagram Reel 9:16 1080*1920" Resolution="1080, 1920" />
-                  <VideoResolutionNames>
-                    <Item>Instagram 1:1 1080*1080</Item>
-                    <Item>Instagram Reel 9:16 1080*1920</Item>
-                    <Item>Large NFT 1:1 1920*1920</Item>
-                    <Item>Twitter 1:1 720*720 </Item>
-                    <Item>Mastodon 1:1 1280*1280</Item>
-                  </VideoResolutionNames>
-                  <VideoResolutions>
-                    <Item AspectX="1" AspectXY="1, 1" AspectY="1" Name="Instagram 1:1 1080*1080" Resolution="1080, 1080" />
-                    <Item AspectX="0.5625" AspectXY="9, 16" AspectY="1.7777778" Name="Instagram Reel 9:16 1080*1920" Resolution="1080, 1920" />
-                    <Item AspectX="1" AspectXY="1, 1" AspectY="1" Name="Large NFT 1:1 1920*1920" Resolution="1920, 1920" />
-                    <Item AspectX="1" AspectXY="1, 1" AspectY="1" Name="Twitter 1:1 720*720 " Resolution="720, 720" />
-                    <Item AspectX="1" AspectXY="1, 1" AspectY="1" Name="Mastodon 1:1 1280*1280" Resolution="1280, 1280" />
-                  </VideoResolutions>
-                </VideoModel>
-              </p:DefaultValue>
-            </Pin>
+            <Pin Id="Jk1yY8UNvJMMX2Vhg9clbO" Name="LoopToolSettings" Kind="InputPin" />
             <Pin Id="Hl6p9GpB61HMvMvxatTs4d" Name="Node Context" Kind="InputPin" />
             <Pin Id="BHMzmEw9781Mf9AokryQmw" Name="Scene" Kind="InputPin" />
             <Pin Id="RKfmJkghfAON1dcz3CRYCc" Name="Lighting" Kind="InputPin" />
@@ -1556,8 +1497,8 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="SBQOevSkfVYPvjUXsK23Iy" Location="VL.Stride" Version="2023.5.3-0294-g08cfc6dc6d" />
+  <NugetDependency Id="SBQOevSkfVYPvjUXsK23Iy" Location="VL.Stride" Version="2023.5.3-0302-gab7ef9c671" />
   <NugetDependency Id="Vfyx0KYIRfIMF8bKvTlC9K" Location="VL.Fuse" Version="0.0.0.0" />
-  <NugetDependency Id="UbhdraU97xqOubbfzdkzlU" Location="VL.Skia" Version="2023.5.3-0294-g08cfc6dc6d" />
+  <NugetDependency Id="UbhdraU97xqOubbfzdkzlU" Location="VL.Skia" Version="2023.5.3-0302-gab7ef9c671" />
   <NugetDependency Id="OgPsbuEWIKqQZdqi5h5gM5" Location="VL.LoopTool" Version="0.0.0" />
 </Document>
