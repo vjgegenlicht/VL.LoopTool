@@ -180,51 +180,6 @@
       <Canvas Id="MD4mOI38xSQQFvD7locj8L" Name="LoopTimer" Position="40,133">
         <!--
 
-    ************************ GetLoopTimerInstance ************************
-
--->
-        <Node Name="GetLoopTimerInstance" Bounds="60,49,172,164" Id="JVkzDqgLL3nNxnLlsxByxm">
-          <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
-            <Choice Kind="OperationDefinition" Name="Operation" />
-            <CategoryReference Kind="Category" Name="Primitive" NeedsToBeDirectParent="true" />
-          </p:NodeReference>
-          <Patch Id="V4yVK95m3TNMxdz0tFBIUA">
-            <Node Bounds="141,91,79,83" Id="HZJFup1CJc4QKVAhtntJDf">
-              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-                <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
-                <Choice Kind="OperationCallFlag" Name="SingleInstance" />
-              </p:NodeReference>
-              <Pin Id="IxRDqJJsjbfL7i4O50UIR7" Name="Force New Instance" Kind="InputPin" />
-              <Pin Id="GJam2pODwu9PvrEmGlABqu" Name="On Stop" Kind="InputPin" DefaultValue="ReleaseAndDispose" />
-              <Pin Id="GszyGLzKmbtMegJ8XM0bLu" Name="Singleton" Kind="OutputPin" />
-              <Patch Id="V54H0FLGEP0LCmvDENze3I" Name="Producer" ManuallySortedPins="true">
-                <Pin Id="U0cZtNwdkKZNRohk3IYmTH" Name="Result" Kind="OutputPin" />
-                <ControlPoint Id="KxBjwiTKoOhNxvH1gtrnE0" Bounds="155,167" />
-                <Node Bounds="153,114,55,26" Id="Gzp73ycmUu9MDlxZbcSVZi">
-                  <p:NodeReference LastCategoryFullName="LoopTool.LoopTimer.LoopTimer" LastDependency="VL.LoopTool.vl">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="ClassType" Name="LoopTimer" />
-                    <Choice Kind="OperationCallFlag" Name="Create" />
-                    <CategoryReference Kind="ClassType" Name="LoopTimer" NeedsToBeDirectParent="true">
-                      <p:OuterCategoryReference Kind="Category" Name="LoopTimer" NeedsToBeDirectParent="true" />
-                    </CategoryReference>
-                  </p:NodeReference>
-                  <Pin Id="IJAPzUQUqrZPg5dpYWIEwx" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                  <Pin Id="Vu7V73n5QlKP85SazChtDB" Name="Clock" Kind="InputPin" IsHidden="true" />
-                  <Pin Id="NzWtaEPhLfxOAj9M3Cez36" Name="Output" Kind="StateOutputPin" />
-                </Node>
-              </Patch>
-            </Node>
-            <Link Id="KrgpkLh7td0PLRCWepa35S" Ids="KxBjwiTKoOhNxvH1gtrnE0,U0cZtNwdkKZNRohk3IYmTH" IsHidden="true" />
-            <Link Id="V3XG5CVBGozP3UIzMnz10E" Ids="NzWtaEPhLfxOAj9M3Cez36,KxBjwiTKoOhNxvH1gtrnE0" />
-            <ControlPoint Id="AUClYWEN9HPMuQY5UCX5Ao" Bounds="143,196" />
-            <Link Id="IhTa8N2rcixMbtXnYHrk8A" Ids="GszyGLzKmbtMegJ8XM0bLu,AUClYWEN9HPMuQY5UCX5Ao" />
-            <Pin Id="VgvAv0w5MK3LI6l70f35mx" Name="Output" Kind="OutputPin" Bounds="543,400" />
-            <Link Id="U8M7Zul7bWJOtI9POJoaCb" Ids="AUClYWEN9HPMuQY5UCX5Ao,VgvAv0w5MK3LI6l70f35mx" IsHidden="true" />
-          </Patch>
-        </Node>
-        <!--
-
     ************************ GetLoopTimer ************************
 
 -->
@@ -234,17 +189,36 @@
           </p:NodeReference>
           <Patch Id="FhIMCyATKzXNgnno41qzO8">
             <Canvas Id="MruGfo2XIbyNnKDwC2sauO" CanvasType="Group">
-              <ControlPoint Id="HPyJdUEhI4fNTTJdkYlfwB" Bounds="43,102" />
-              <Node Bounds="42,32,118,19" Id="NVG0w3YliJdNXVkwYus2Ev">
-                <p:NodeReference LastCategoryFullName="LoopTool.LoopTimer" LastDependency="VL.LoopTool.vl">
-                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="GetLoopTimerInstance" />
+              <ControlPoint Id="HPyJdUEhI4fNTTJdkYlfwB" Bounds="87,171" />
+              <Pad Id="Kp0X9WMMl3HMeQTi2VBCSn" Bounds="86,140" />
+              <Node Bounds="84,23,79,89" Id="Dy2c2tfYq4HLQrGz47e5Ko">
+                <p:NodeReference LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
+                  <CategoryReference Kind="Category" Name="Primitive" />
+                  <Choice Kind="ProcessAppFlag" Name="SingleInstance (PerApp)" />
                 </p:NodeReference>
-                <Pin Id="H5mxC869qKAOvC12AF3DjM" Name="Output" Kind="OutputPin" />
+                <Patch Id="FQeVUXJYyIYNYozBZd6WYB" Name="Producer" ManuallySortedPins="true">
+                  <Pin Id="K95zASS2cyMQVnRbMpvg8o" Name="Result" Kind="OutputPin" />
+                  <ControlPoint Id="BRCKB8vc7KgPOCJ8GovEyJ" Bounds="89,105" />
+                  <Node Bounds="96,46,55,26" Id="Sa188MbaHwvLJrRLSTTRC7">
+                    <p:NodeReference LastCategoryFullName="LoopTool.LoopTimer.LoopTimer" LastDependency="VL.LoopTool.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="ClassType" Name="LoopTimer" />
+                      <Choice Kind="OperationCallFlag" Name="Create" />
+                      <CategoryReference Kind="ClassType" Name="LoopTimer" NeedsToBeDirectParent="true">
+                        <p:OuterCategoryReference Kind="Category" Name="LoopTimer" NeedsToBeDirectParent="true" />
+                      </CategoryReference>
+                    </p:NodeReference>
+                    <Pin Id="A9rVguUrxDcQDzo4yy4kwP" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                    <Pin Id="AAQXWe1FL8pPrafnS116tB" Name="Clock" Kind="InputPin" IsHidden="true" />
+                    <Pin Id="PgC72jwn9pCLRco1vLVxua" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                </Patch>
+                <Pin Id="VW6R8QDBBCZL2fyLAWmJS9" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                <Pin Id="EkFMLXSlBvLLbSk79Mk9as" Name="Value" Kind="OutputPin" />
               </Node>
-              <Pad Id="Kp0X9WMMl3HMeQTi2VBCSn" Bounds="44,72" />
             </Canvas>
-            <Patch Id="EpofPzh4fS6M5xzG4G9qHI" Name="Create" ParticipatingElements="NVG0w3YliJdNXVkwYus2Ev" />
+            <Patch Id="EpofPzh4fS6M5xzG4G9qHI" Name="Create" ParticipatingElements="M7ZeQs6W7gpQYdTz84B9BR" />
             <Patch Id="TTPTWaK0bVBN83YgMEAila" Name="Update">
               <Pin Id="VkJbgUlQKukN1glwparvnY" Name="Output" Kind="OutputPin" />
             </Patch>
@@ -253,8 +227,10 @@
               <Fragment Id="MoghCZDNTV2N6ff7XU2Yz9" Patch="TTPTWaK0bVBN83YgMEAila" Enabled="true" />
             </ProcessDefinition>
             <Link Id="EJpNnKxswDfPBPB3O8rTN4" Ids="HPyJdUEhI4fNTTJdkYlfwB,VkJbgUlQKukN1glwparvnY" IsHidden="true" />
-            <Link Id="Af7P1G2zWuCQZw2pAHd8FX" Ids="H5mxC869qKAOvC12AF3DjM,Kp0X9WMMl3HMeQTi2VBCSn" />
             <Link Id="VE5yqPdbQOGOFV9jTPMUCz" Ids="Kp0X9WMMl3HMeQTi2VBCSn,HPyJdUEhI4fNTTJdkYlfwB" />
+            <Link Id="P6juaieyiqJM39dvMZUcTl" Ids="BRCKB8vc7KgPOCJ8GovEyJ,K95zASS2cyMQVnRbMpvg8o" IsHidden="true" />
+            <Link Id="CcIq3jdZQ8QNt7MfsCvSMD" Ids="PgC72jwn9pCLRco1vLVxua,BRCKB8vc7KgPOCJ8GovEyJ" />
+            <Link Id="M7ZeQs6W7gpQYdTz84B9BR" Ids="EkFMLXSlBvLLbSk79Mk9as,Kp0X9WMMl3HMeQTi2VBCSn" />
           </Patch>
         </Node>
         <!--
@@ -11329,14 +11305,15 @@
                     <Pin Id="BpfwdQGCm2GOcu8hPzNL7n" Name="Input" Kind="StateInputPin" />
                     <Pin Id="MnFavpBkUSOMP0Pck23LiG" Name="Output" Kind="StateOutputPin" />
                   </Node>
-                  <Node Bounds="44,195,118,19" Id="Vdv2yf3xFXSM92CIwiuur4">
+                  <Pad Id="Rycrg5PAbfQQSay1pLY1mW" Bounds="46,235" />
+                  <Node Bounds="44,189,81,19" Id="A7BC5yummY1M0G5WkiRIfB">
                     <p:NodeReference LastCategoryFullName="LoopTool.LoopTimer" LastDependency="VL.LoopTool.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                      <Choice Kind="OperationCallFlag" Name="GetLoopTimerInstance" />
+                      <Choice Kind="ProcessAppFlag" Name="GetLoopTimer" />
                     </p:NodeReference>
-                    <Pin Id="P5caRHlUK12N2rHEzNGGkE" Name="Output" Kind="OutputPin" />
+                    <Pin Id="I1pT7wWryh0PkcD2d2KbuW" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                    <Pin Id="Ru3lLUyjvwgPaNPftAwKDH" Name="Output" Kind="OutputPin" />
                   </Node>
-                  <Pad Id="Rycrg5PAbfQQSay1pLY1mW" Bounds="46,235" />
                 </Canvas>
                 <ProcessDefinition Id="UdA878AgijDNvlRZGJo0ID" HasStateOut="true">
                   <Fragment Id="PH5FmqxrE8wMj64WWnWgvM" Patch="EHw7g2EpcVFQZsBvWRaxMa" Enabled="true" />
@@ -11349,7 +11326,7 @@
                 <Link Id="E6zsTMJM2IVLeh6PuYNubB" Ids="Tt1XaTkOrEtQYgKbbWIGOB,Ub5HqHlTmxALHzh0hwQa2o" IsHidden="true" />
                 <Link Id="RhNqOfbpqnjM9wN7OdPS2g" Ids="Ub5HqHlTmxALHzh0hwQa2o,QHOufVrzrJ7PHh1lHXCAP3" />
                 <Link Id="VeXZAZINjBNP04SoPXtKL0" Ids="QHOufVrzrJ7PHh1lHXCAP3,H8SrcImitTiP79xr1KDCc7" />
-                <Patch Id="EHw7g2EpcVFQZsBvWRaxMa" Name="Create" ParticipatingElements="Vdv2yf3xFXSM92CIwiuur4">
+                <Patch Id="EHw7g2EpcVFQZsBvWRaxMa" Name="Create" ParticipatingElements="CeppXTVCJUsQQn7A2r1J7c">
                   <Pin Id="Tt1XaTkOrEtQYgKbbWIGOB" Name="ApplicationModel" Kind="InputPin">
                     <p:TypeAnnotation LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
                       <Choice Kind="TypeFlag" Name="Channel" />
@@ -11377,10 +11354,10 @@
                 <Link Id="GNbPFWmDWbaLm1m4ACvPpx" Ids="PYQEdUAAZZaLsxmiz4jCRz,GaI8IeXNW0QNzAQcoHnaNZ" />
                 <Link Id="UBioK9zgFdhOrmqdLr4ESi" Ids="VPMMg92uOf7Mcam89YC9Ub,IZj43WajYBhN1YRlSoUURw" />
                 <Link Id="IRBeZEhEpMHPCPJjGwJnIK" Ids="PaXREZjwhoGMi0ohVtaKwV,BpfwdQGCm2GOcu8hPzNL7n" />
-                <Link Id="QtEJyuYnqprMCt2xNu36Wg" Ids="P5caRHlUK12N2rHEzNGGkE,Rycrg5PAbfQQSay1pLY1mW" />
                 <Link Id="DSnmbSIiVY1Nd2c6Dn2zlF" Ids="Rycrg5PAbfQQSay1pLY1mW,DW7SQsBo4M1MXGRyDFDec8" />
                 <Link Id="BhOvAWUH0foOAwzutzdV31" Ids="K7tgbxY0FPUPaRpjzCSvB1,A1FAiseu3QcLBkpxVrJAmz" />
                 <Slot Id="NNaUn91U3GiOfpjOWnhyIV" Name="ApplicationModel" />
+                <Link Id="CeppXTVCJUsQQn7A2r1J7c" Ids="Ru3lLUyjvwgPaNPftAwKDH,Rycrg5PAbfQQSay1pLY1mW" />
               </Patch>
             </Node>
           </Canvas>
@@ -13564,7 +13541,7 @@
                       <Choice Kind="ProcessAppFlag" Name="TextureWindow" />
                     </p:NodeReference>
                     <Pin Id="IiWTyHrz1h3OOfE7bnkoH4" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                    <Pin Id="EdFOo1V6r4pMyzMGNfmoyB" Name="Bounds" Kind="InputPin" DefaultValue="2560, -808, 1920, 1920" />
+                    <Pin Id="EdFOo1V6r4pMyzMGNfmoyB" Name="Bounds" Kind="InputPin" DefaultValue="2560, -808, 1080, 1080" />
                     <Pin Id="SnagSFgcBNcNAMRSJ0A1lP" Name="Save Bounds" Kind="InputPin" DefaultValue="True" />
                     <Pin Id="RhFnx9RC0WGNKwHuO1xpXP" Name="Back Buffer Format" Kind="InputPin" IsHidden="true" />
                     <Pin Id="GskDi2BAeB9N0oAvsdYiqN" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
