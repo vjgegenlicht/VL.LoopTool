@@ -15,7 +15,7 @@
     <license type="expression">LGPL-3.0-only</license>
     <licenseUrl>https://licenses.nuget.org/LGPL-3.0-only</licenseUrl>
     <dependencies>
-      <dependency id="VL.ScreenRecorder" version="0.1.4-alpha -pre" />
+      <dependency id="VL.ScreenRecorder" version="0.1.4-alpha" />
     </dependencies>
   </metadata>
   <files>
