@@ -19,7 +19,6 @@
     </dependencies>
   </metadata>
   <files>
-  <files>
   <file src="..\*.vl" target="" exclude="" />
   <file src="..\assets\**" target="assets\" exclude="" />
   <file src="..\help\**" target="help\" exclude="" />
