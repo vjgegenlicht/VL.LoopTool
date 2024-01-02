@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>VL.LoopTool</id>
+    <version>0.5.0</version>
+    <title>VL.LoopTool</title>
+    <authors>Bryan Moll</authors>
+    <owners>gegenlicht</owners>
+    <projectUrl>https://github.com/vjgegenlicht/VL.LoopTool</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>A small toolset to create and record video loops in VVVV Gamma</summary>
+    <description>A collection of useful nodes designed to simplify the creation of repeating loop animations in VVVV Gamma. This addon includes animation nodes that respond to a global sequencer, making it easy to create smooth tween animations. Additionally, it provides animated camera and scene presets. The second part of this addon is a toolkit for capturing video, image sequences and images.</description>
+    <copyright>Copyright © 2023 by gegenlicht</copyright>
+    <tags>VL, video,loop, lfo, aanimation, realtime</tags>
+    <license type="expression">LGPL-3.0-only</license>
+    <licenseUrl>https://licenses.nuget.org/LGPL-3.0-only</licenseUrl>
+    <dependencies>
+      <dependency id="VL.ScreenRecorder" version="0.1.4-alpha-pre" />
+    </dependencies>
+  </metadata>
+  <files>
+  <files>
+  <file src="..\*.vl" target="" exclude="" />
+  <file src="..\assets\**" target="assets\" exclude="" />
+  <file src="..\help\**" target="help\" exclude="" />
+  <file src="..\shaders\**" target="shaders\" exclude="" />
+  <file src="..\vl\**" target="vl\" exclude="" />
+  </files>
+</package>

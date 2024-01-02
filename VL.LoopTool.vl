@@ -528,7 +528,7 @@
           </p:NodeReference>
           <Patch Id="Sr9cwRcyj4cQOWTTOEwQXw">
             <Canvas Id="KifaH0cV4U7QDRXDv5xVb7" CanvasType="Group">
-              <Node Bounds="100,112" Id="HK7DDhtpInMMiOxQt9WfGo">
+              <Node Bounds="100,112,71,19" Id="HK7DDhtpInMMiOxQt9WfGo">
                 <p:NodeReference LastCategoryFullName="LoopTool.LoopTimer" LastDependency="VL.LoopTool.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="GetSubLoop" />
@@ -538,7 +538,7 @@
                 <Pin Id="BYA52cXp6bxOaWbHk8iN3u" Name="SubLoop" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="D8v2VmbRBjnPmjOSIHvNRw" Bounds="102,80" />
-              <Node Bounds="98,156,145,26" Id="Kc0I7C29GyeNf3DDAvWrp0">
+              <Node Bounds="98,156,168,26" Id="Kc0I7C29GyeNf3DDAvWrp0">
                 <p:NodeReference LastCategoryFullName="LoopTool.LoopTimer.SubLoop" LastDependency="VL.LoopTool.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="RecordType" Name="SubLoop" />
@@ -588,7 +588,6 @@
               <ControlPoint Id="NwfODHDBxSYNBmPAgojFeO" Bounds="178,335" />
               <ControlPoint Id="TWZ9Cpl6VCaPjpVX8JkZcE" Bounds="266,335" />
               <ControlPoint Id="UUVxtSw8tEBLOJFmuvQo9K" Bounds="354,335" />
-              <ControlPoint Id="V0wqC2bUm1NPaeylrFeZzq" Bounds="243,181" />
               <ControlPoint Id="FTzxUbB6LTcL1PK9AEI3XO" Bounds="449,336" />
             </Canvas>
             <ProcessDefinition Id="TDoSgRTuLrYPoJ13WesxgM">
@@ -624,7 +623,7 @@
             <Link Id="NKPpmIdQwmBMChiicxKbtz" Ids="TWZ9Cpl6VCaPjpVX8JkZcE,GaQx8cAM50oNHIc5a9MMYl" IsHidden="true" />
             <Link Id="FLMktmlWtrELt0sCStqIbQ" Ids="FqI5XlhjHvrMazRujD9Ymh,UUVxtSw8tEBLOJFmuvQo9K" />
             <Link Id="K4ULXVxZeH2P7I10H01oBT" Ids="UUVxtSw8tEBLOJFmuvQo9K,GVQ8zs0MOgxNJ5TLgpPZxB" IsHidden="true" />
-            <Link Id="Iq68SzpjihqO1UoEjgYbJt" Ids="P3FMoty4os4N7szPgsYqSx,V0wqC2bUm1NPaeylrFeZzq,FTzxUbB6LTcL1PK9AEI3XO" />
+            <Link Id="Iq68SzpjihqO1UoEjgYbJt" Ids="P3FMoty4os4N7szPgsYqSx,FTzxUbB6LTcL1PK9AEI3XO" />
             <Link Id="ILh3Q2ErcyZLp3FWcoMrM4" Ids="FTzxUbB6LTcL1PK9AEI3XO,TH38TuAHXuDLA0P0ZQidI5" IsHidden="true" />
           </Patch>
         </Node>
@@ -13483,7 +13482,7 @@
                       <Choice Kind="ProcessAppFlag" Name="TextureWindow" />
                     </p:NodeReference>
                     <Pin Id="IiWTyHrz1h3OOfE7bnkoH4" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                    <Pin Id="EdFOo1V6r4pMyzMGNfmoyB" Name="Bounds" Kind="InputPin" DefaultValue="3303, -794, 1074, 1063" />
+                    <Pin Id="EdFOo1V6r4pMyzMGNfmoyB" Name="Bounds" Kind="InputPin" DefaultValue="2560, -808, 1080, 1080" />
                     <Pin Id="SnagSFgcBNcNAMRSJ0A1lP" Name="Save Bounds" Kind="InputPin" DefaultValue="True" />
                     <Pin Id="RhFnx9RC0WGNKwHuO1xpXP" Name="Back Buffer Format" Kind="InputPin" IsHidden="true" />
                     <Pin Id="GskDi2BAeB9N0oAvsdYiqN" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
