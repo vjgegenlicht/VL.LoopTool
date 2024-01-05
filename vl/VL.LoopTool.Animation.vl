@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="SacGQwfj38QNN06D7qVNdP" LanguageVersion="2023.5.3-0228-gfb315638f6" Version="0.128">
-  <NugetDependency Id="EP6PmgR81BCPLRalzXL83O" Location="VL.CoreLib" Version="2023.5.3-0228-gfb315638f6" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="SacGQwfj38QNN06D7qVNdP" LanguageVersion="2023.5.3-0423-gee17475a3a" Version="0.128">
+  <NugetDependency Id="EP6PmgR81BCPLRalzXL83O" Location="VL.CoreLib" Version="2023.5.3-0423-gee17475a3a" />
   <Patch Id="MQils88rWKaNYEKMls0005">
     <Canvas Id="DdVmuqeAse0MMusZAwlyNJ" DefaultCategory="LoopTool.Animation" CanvasType="FullCategory">
       <!--
@@ -8,7 +8,7 @@
     ************************ PresetTweenerLinear ************************
 
 -->
-      <Node Name="PresetTweenerLinear" Bounds="212,282" Id="J1nH9HHIyi7NoyotVzEnhT">
+      <Node Name="PresetTweenerLinear" Bounds="79,105" Id="J1nH9HHIyi7NoyotVzEnhT">
         <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -221,7 +221,7 @@
     ************************ PresetTweenerTargetValue ************************
 
 -->
-      <Node Name="PresetTweenerTargetValue" Bounds="214,333" Id="HdXs0nZP8hjNMiF4pHDFwm">
+      <Node Name="PresetTweenerTargetValue" Bounds="81,156" Id="HdXs0nZP8hjNMiF4pHDFwm">
         <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>

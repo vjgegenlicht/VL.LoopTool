@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="T6sz0MNcfHwNsE2xrcSc2R" LanguageVersion="2023.5.3-0327-g42e516133d" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="T6sz0MNcfHwNsE2xrcSc2R" LanguageVersion="2023.5.3-0423-gee17475a3a" Version="0.128">
   <Patch Id="QEljJm03rdPNlrSw1B9d8K">
     <Canvas Id="H3geoqiq2ksLtub1KbjxiC" DefaultCategory="LoopTool" CanvasType="FullCategory">
       <!--
@@ -173,7 +173,7 @@
     ************************ GetLoopTimer ************************
 
 -->
-        <Node Name="GetLoopTimer" Bounds="54,359" Id="DWCMkcrj62uMyW1FE1dWEU">
+        <Node Name="GetLoopTimer" Bounds="53,103" Id="DWCMkcrj62uMyW1FE1dWEU">
           <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
             <Choice Kind="ContainerDefinition" Name="Process" />
           </p:NodeReference>
@@ -228,7 +228,7 @@
     ************************ GetLoopPhase ************************
 
 -->
-        <Node Name="GetLoopPhase" Bounds="54,494" Id="VlU7oK0uZDdLeip1QcnQwE">
+        <Node Name="GetLoopPhase" Bounds="53,238" Id="VlU7oK0uZDdLeip1QcnQwE">
           <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
             <Choice Kind="ContainerDefinition" Name="Process" />
           </p:NodeReference>
@@ -329,7 +329,7 @@
     ************************ BlendLoopPhase ************************
 
 -->
-        <Node Name="BlendLoopPhase" Bounds="54,446" Id="KGdzdhqmFlzMAeUiCkOidh">
+        <Node Name="BlendLoopPhase" Bounds="53,190" Id="KGdzdhqmFlzMAeUiCkOidh">
           <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
             <Choice Kind="ContainerDefinition" Name="Process" />
           </p:NodeReference>
@@ -455,7 +455,7 @@
     ************************ GetSubLoop ************************
 
 -->
-        <Node Name="GetSubLoop" Bounds="56,579" Id="HiCTWBWhnm7Pl1PLBobYkr">
+        <Node Name="GetSubLoop" Bounds="55,323" Id="HiCTWBWhnm7Pl1PLBobYkr">
           <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
             <Choice Kind="ContainerDefinition" Name="Process" />
           </p:NodeReference>
@@ -522,7 +522,7 @@
     ************************ GetSubLoopPhase ************************
 
 -->
-        <Node Name="GetSubLoopPhase" Bounds="54,536" Id="VyxJn1e3sLgM9S0DivlJFO">
+        <Node Name="GetSubLoopPhase" Bounds="53,280" Id="VyxJn1e3sLgM9S0DivlJFO">
           <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
             <Choice Kind="ContainerDefinition" Name="Process" />
           </p:NodeReference>
@@ -632,7 +632,7 @@
     ************************ LoopTimer ************************
 
 -->
-        <Node Name="LoopTimer" Bounds="54,321" Id="Fjs6akCXLCwP02XhPToNVO">
+        <Node Name="LoopTimer" Bounds="53,65" Id="Fjs6akCXLCwP02XhPToNVO">
           <p:NodeReference>
             <Choice Kind="ClassDefinition" Name="Class" />
             <FullNameCategoryReference ID="Primitive" />
@@ -1585,7 +1585,7 @@
     ************************ SubLoop ************************
 
 -->
-        <Node Name="SubLoop" Bounds="56,401" Id="U61pbTFmjwhLPBsE9ctsja">
+        <Node Name="SubLoop" Bounds="55,145" Id="U61pbTFmjwhLPBsE9ctsja">
           <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
             <Choice Kind="RecordDefinition" Name="Record" />
           </p:NodeReference>
@@ -1749,6 +1749,127 @@
             </Patch>
           </Patch>
         </Node>
+        <!--
+
+    ************************ Loop ************************
+
+-->
+        <Node Name="Loop" Bounds="62,387" Id="CABJE4C4a5qPqOHjcP1WxL">
+          <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+            <Choice Kind="ContainerDefinition" Name="Process" />
+          </p:NodeReference>
+          <Patch Id="HV8R1scvplpOimFqA79P7Z">
+            <Canvas Id="S7jTvlwhhRSPKEwsPTI3SK" CanvasType="Group">
+              <Node Bounds="141,150,80,19" Id="O3GcCxzNLYpOvDhWgTKjk1">
+                <p:NodeReference LastCategoryFullName="LoopTool.LoopTimer" LastDependency="VL.LoopTool.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="ProcessAppFlag" Name="GetLoopPhase" />
+                </p:NodeReference>
+                <Pin Id="EHs8Mo3vTxiNrPCv17dXPn" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                <Pin Id="Kc2ovFbkAKmNuklp0JDBJw" Name="PhaseType" Kind="InputPin" DefaultValue="InOut" />
+                <Pin Id="OIL3Ut2qr8dNBLQ7DbkBOr" Name="LoopPhase" Kind="OutputPin" />
+                <Pin Id="DER7iZjLsL1OKyMXvnkW6D" Name="LoopCycles" Kind="OutputPin" />
+                <Pin Id="RdfJrKRRNSrPAXJfCW5u91" Name="LoopOnNewCycle" Kind="OutputPin" />
+                <Pin Id="EUCoQVyBvljLvYKIyonSc3" Name="LoopInOut" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="243,151,97,19" Id="GPKyp1rsYUYP60D96O7OYn">
+                <p:NodeReference LastCategoryFullName="LoopTool.LoopTimer" LastDependency="VL.LoopTool.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="ProcessAppFlag" Name="GetSubLoopPhase" />
+                </p:NodeReference>
+                <Pin Id="EeHhtiH4d0LOCpHBBa2Lrc" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                <Pin Id="FpPRI9m5rRDOQKw4KXhV7I" Name="PhaseType" Kind="InputPin" DefaultValue="InOut" />
+                <Pin Id="EGfheJAqrMpNJGqhuEDi8C" Name="CustomSubLoop" Kind="InputPin" DefaultValue="False" />
+                <Pin Id="MJML39ruZUtOvB8K0TrbvJ" Name="SubLoopPhase" Kind="OutputPin" />
+                <Pin Id="M2whET0CQHMNOJP1mHeStp" Name="SubLoopInOut" Kind="OutputPin" />
+                <Pin Id="D71Pa8mq3owOhYfSTkAbhS" Name="SubLoopWidth" Kind="OutputPin" />
+                <Pin Id="TSRCtWp44tzLHLo11Zg7PL" Name="SubLoopIndex" Kind="OutputPin" />
+                <Pin Id="UGcyIlNzKOpLSGb42FjG5H" Name="SubLoopCount" Kind="OutputPin" />
+              </Node>
+              <ControlPoint Id="JeqvdPj3uRTQZSI1acWzjM" Bounds="140,71" />
+              <Node Bounds="105,252,167,19" Id="Vr5e5dZm3eqO4tQB2llUOV">
+                <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="Switch" />
+                </p:NodeReference>
+                <Pin Id="Qzkb2bl1E1SOREfG4PoX7Y" Name="Index" Kind="InputPin" />
+                <Pin Id="SXVHHV6hrOHLNExONqFGES" Name="Input" Kind="InputPin" />
+                <Pin Id="Ds7vQh3jTFROM1VaXAajeP" Name="Input 2" Kind="InputPin" />
+                <Pin Id="J7BmIp6j1QqO7GRHt2bGMy" Name="Output" Kind="OutputPin" />
+                <Pin Id="MrEVyMTy8h1OYaIfQ6onyW" Name="Input 3" Kind="InputPin" />
+              </Node>
+              <Node Bounds="347,153,97,19" Id="NF9tXpOqU66Okuz29kaJ0x">
+                <p:NodeReference LastCategoryFullName="LoopTool.LoopTimer" LastDependency="VL.LoopTool.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="ProcessAppFlag" Name="GetSubLoopPhase" />
+                </p:NodeReference>
+                <Pin Id="UtNn2keYZmROTnTX2fhX3S" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                <Pin Id="GThTTfjYlYUMmqxQwj6Ob0" Name="PhaseType" Kind="InputPin" DefaultValue="InOut" />
+                <Pin Id="Ec2KBVx5XhCMsSy1v3g5jZ" Name="CustomSubLoop" Kind="InputPin" DefaultValue="True" />
+                <Pin Id="I1l5jAerDWZOlX1nrRvtja" Name="SubLoopPhase" Kind="OutputPin" />
+                <Pin Id="K2SZRBWCCmaNxxs4PekKBh" Name="SubLoopInOut" Kind="OutputPin" />
+                <Pin Id="RCdEUEcg2RQPNsOc5KcGhH" Name="SubLoopWidth" Kind="OutputPin" />
+                <Pin Id="LDOYtrN08eKM3mzuumTTPz" Name="SubLoopIndex" Kind="OutputPin" />
+                <Pin Id="VulDwN0kSEOQaIEInvcvDq" Name="SubLoopCount" Kind="OutputPin" />
+              </Node>
+              <ControlPoint Id="NWUvuIetcaOO0YoUeB6ywO" Bounds="108,39" />
+              <ControlPoint Id="MD7ymMbjMSjL9yUYkibVdA" Bounds="162,486" />
+              <ControlPoint Id="EG11i1DDzYtQIMi4CI0g6a" Bounds="182,324" />
+              <ControlPoint Id="ToisNTiX0qIMiKPobO2TMz" Bounds="269,321" />
+              <ControlPoint Id="H2iNg7fpb6GNkPMvzKq7E1" Bounds="402,313" />
+              <Node Bounds="159,433,46,19" Id="En96b3s32nZMzUqtB851by">
+                <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Tween" />
+                </p:NodeReference>
+                <Pin Id="QSdMvSpPiZeMIcMBby2jjb" Name="Value" Kind="InputPin" />
+                <Pin Id="Fsxh49gHKSeO1f0OrbYBPG" Name="Transition" Kind="InputPin" DefaultValue="Cubic" />
+                <Pin Id="AZQ7mq0nPeBO2n2XUjx973" Name="Mode" Kind="InputPin" DefaultValue="InOut" />
+                <Pin Id="PINtiILwev9PnIfYPeqzs6" Name="Output" Kind="OutputPin" />
+              </Node>
+              <ControlPoint Id="Ut9B2fmBXnDMvL1Gab3CAP" Bounds="359,357" />
+              <ControlPoint Id="CYdwy7CRXE7MFfiAWSy4fl" Bounds="184,362" />
+            </Canvas>
+            <ProcessDefinition Id="V2i9jCIreXWLk1x9EuycjF">
+              <Fragment Id="QbndPvNvfEUMoWAvu6u2mQ" Patch="HCbgyTUYSBlQTYk3qPwD44" Enabled="true" />
+              <Fragment Id="NSTMGPPIbbFObti3yn2m4l" Patch="IR8s9bitYBUNObdOI9sNGA" Enabled="true" />
+            </ProcessDefinition>
+            <Link Id="AkIo65EuvaWMnhJ3GGbeQe" Ids="JeqvdPj3uRTQZSI1acWzjM,Kc2ovFbkAKmNuklp0JDBJw" />
+            <Link Id="Fe8WtE2SMfIL00wy4NbVSe" Ids="V7jKeK5OaCENhEtgiwYtO8,JeqvdPj3uRTQZSI1acWzjM" IsHidden="true" />
+            <Link Id="C0uXvTBmXNLNERv1ZR13JJ" Ids="JeqvdPj3uRTQZSI1acWzjM,FpPRI9m5rRDOQKw4KXhV7I" />
+            <Link Id="PJnzYTHXaY7PVBJwZE3wv5" Ids="OIL3Ut2qr8dNBLQ7DbkBOr,SXVHHV6hrOHLNExONqFGES" />
+            <Link Id="L9iY2IYzvAiLcXqAkAhF8c" Ids="MJML39ruZUtOvB8K0TrbvJ,Ds7vQh3jTFROM1VaXAajeP" />
+            <Link Id="FMwdaJmjNQNPYb28eWiktf" Ids="I1l5jAerDWZOlX1nrRvtja,MrEVyMTy8h1OYaIfQ6onyW" />
+            <Link Id="AQSxkmrnd8aK92PFNvahdh" Ids="JeqvdPj3uRTQZSI1acWzjM,GThTTfjYlYUMmqxQwj6Ob0" />
+            <Link Id="V1BSQ1OMh9iOp1tN0JL4QO" Ids="NWUvuIetcaOO0YoUeB6ywO,Qzkb2bl1E1SOREfG4PoX7Y" />
+            <Link Id="MFzPOJUwDXDPemE6IDFkSK" Ids="EnJsp3l8QJCOr3pqcPjQds,NWUvuIetcaOO0YoUeB6ywO" IsHidden="true" />
+            <Link Id="KGR2Ph6H8BRMVtrt6eDLEJ" Ids="MD7ymMbjMSjL9yUYkibVdA,RldoT9aWOYoPB5DqhB2Zfl" IsHidden="true" />
+            <Link Id="TjjVUfHHfcuPim2rUC2A2l" Ids="DER7iZjLsL1OKyMXvnkW6D,EG11i1DDzYtQIMi4CI0g6a" />
+            <Link Id="AKVZuTNrSkzPNdTtp47V57" Ids="EG11i1DDzYtQIMi4CI0g6a,IoRxzw6We4MLJOkf1I3QVx" IsHidden="true" />
+            <Link Id="NVHfAFIFZfiO2twfZIxUjR" Ids="RdfJrKRRNSrPAXJfCW5u91,ToisNTiX0qIMiKPobO2TMz" />
+            <Link Id="MgxoAifJpFANlqbNDGFbgW" Ids="ToisNTiX0qIMiKPobO2TMz,MtAaS9mvXpxNGQeB5N8cNx" IsHidden="true" />
+            <Link Id="VEZ5ClcIR2PLtSlQITLRtg" Ids="EUCoQVyBvljLvYKIyonSc3,H2iNg7fpb6GNkPMvzKq7E1" />
+            <Link Id="TIuIARG3QOVMhk5aW0YkG6" Ids="H2iNg7fpb6GNkPMvzKq7E1,SA7LV4vBHjGN6pjcDH7ZWw" IsHidden="true" />
+            <Link Id="T2xu27RKXQrPs4igH4RACk" Ids="J7BmIp6j1QqO7GRHt2bGMy,QSdMvSpPiZeMIcMBby2jjb" />
+            <Link Id="AK0RFHHArZ9MOuMlU954ty" Ids="Ut9B2fmBXnDMvL1Gab3CAP,AZQ7mq0nPeBO2n2XUjx973" />
+            <Link Id="JCba69mGhC9OnpwagHftnk" Ids="VN0xDIQP9GbNMbZkzmnZxa,Ut9B2fmBXnDMvL1Gab3CAP" IsHidden="true" />
+            <Link Id="AuC4pgERAy7NRYY4dH54ev" Ids="CYdwy7CRXE7MFfiAWSy4fl,Fsxh49gHKSeO1f0OrbYBPG" />
+            <Link Id="S4hgbi2IhuCNHxoTb63bZR" Ids="FY2gIiGPAbOMarhF5nBGTQ,CYdwy7CRXE7MFfiAWSy4fl" IsHidden="true" />
+            <Link Id="RiyCerdE9zwPBsA2wtUnlk" Ids="PINtiILwev9PnIfYPeqzs6,MD7ymMbjMSjL9yUYkibVdA" />
+            <Patch Id="HCbgyTUYSBlQTYk3qPwD44" Name="Create" />
+            <Patch Id="IR8s9bitYBUNObdOI9sNGA" Name="Update">
+              <Pin Id="EnJsp3l8QJCOr3pqcPjQds" Name="Index" Kind="InputPin" Bounds="48,42" />
+              <Pin Id="V7jKeK5OaCENhEtgiwYtO8" Name="PhaseType" Kind="InputPin" Bounds="140,71" />
+              <Pin Id="FY2gIiGPAbOMarhF5nBGTQ" Name="Transition" Kind="InputPin" Bounds="184,362" />
+              <Pin Id="VN0xDIQP9GbNMbZkzmnZxa" Name="Mode" Kind="InputPin" Bounds="359,357" />
+              <Pin Id="RldoT9aWOYoPB5DqhB2Zfl" Name="Output" Kind="OutputPin" Bounds="101,316" />
+              <Pin Id="IoRxzw6We4MLJOkf1I3QVx" Name="LoopCycles" Kind="OutputPin" Bounds="182,324" />
+              <Pin Id="MtAaS9mvXpxNGQeB5N8cNx" Name="LoopOnNewCycle" Kind="OutputPin" Bounds="269,321" />
+              <Pin Id="SA7LV4vBHjGN6pjcDH7ZWw" Name="LoopInOut" Kind="OutputPin" Bounds="402,315" />
+            </Patch>
+          </Patch>
+        </Node>
       </Canvas>
       <Canvas Id="IooldHOzDQvPQd0tkPP4t9" Name="System" Position="35,91">
         <Canvas Id="DpylDRLG0oqOHtaz6ogsbn" Name="UI" Position="45,113">
@@ -1771,7 +1892,7 @@
                       <p:OuterCategoryReference Kind="Category" Name="Graphics" NeedsToBeDirectParent="true" />
                     </CategoryReference>
                   </p:NodeReference>
-                  <Pin Id="PExBBlSONylMtqAOjIddYF" Name="Bounds" Kind="InputPin" DefaultValue="1971, 633, 353, 693" />
+                  <Pin Id="PExBBlSONylMtqAOjIddYF" Name="Bounds" Kind="InputPin" DefaultValue="2112, 611, 353, 702" />
                   <Pin Id="JMHbpyliLBlNP7NRYOn3jI" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
                   <Pin Id="Kfrfcqqeo4oNtbcGQ0ilT8" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
                   <Pin Id="Mf3dw6tMDCRPSZXUoTYpDC" Name="Node Context" Kind="InputPin" IsHidden="true" />
@@ -8346,6 +8467,7 @@
                       <Pin Id="H8FxYSMohYsMhSUtVpmpZR" Name="Unfocused" Kind="InputPin" />
                       <Pin Id="CeJgju5NC6HL1pmLxiaahy" Name="Unfocused Active" Kind="InputPin" />
                       <Pin Id="S74V0R1co9WLuO0QMp97Z2" Name="Rounding" Kind="InputPin" DefaultValue="-0" />
+                      <Pin Id="VPbyGA0hi50OAOwiMT1Xn3" Name="Border Size" Kind="InputPin" />
                       <Pin Id="SmdfSq9s3NUNxWVdA0nLj8" Name="Output" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="511,72,87,19" Id="BGb4nFHGQPKP95rQBDGk4H">
@@ -12486,7 +12608,7 @@
                       <Patch Id="C4FOlftCAZYMFWLgNaIKPA" Name="Create" ManuallySortedPins="true" />
                       <Patch Id="MLzgDZXKOZ9PwYXcE0jHyg" Name="Then" ManuallySortedPins="true" />
                       <Node Bounds="99,261,172,19" Id="D1dgogtfZEQLd25uKthc7k">
-                        <p:NodeReference LastCategoryFullName="Stride.Textures.Mixer" LastDependency="VL.Stride.Runtime.vl">
+                        <p:NodeReference LastCategoryFullName="Stride.Textures.Mixer" LastDependency="VL.Stride.TextureFX.vl">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <Choice Kind="ProcessAppFlag" Name="Blend" />
                           <CategoryReference Kind="Category" Name="Mixer" NeedsToBeDirectParent="true" />
@@ -13482,7 +13604,7 @@
                       <Choice Kind="ProcessAppFlag" Name="TextureWindow" />
                     </p:NodeReference>
                     <Pin Id="IiWTyHrz1h3OOfE7bnkoH4" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                    <Pin Id="EdFOo1V6r4pMyzMGNfmoyB" Name="Bounds" Kind="InputPin" DefaultValue="2560, -808, 1080, 1080" />
+                    <Pin Id="EdFOo1V6r4pMyzMGNfmoyB" Name="Bounds" Kind="InputPin" DefaultValue="2560, 0, 1920, 1920" />
                     <Pin Id="SnagSFgcBNcNAMRSJ0A1lP" Name="Save Bounds" Kind="InputPin" DefaultValue="True" />
                     <Pin Id="RhFnx9RC0WGNKwHuO1xpXP" Name="Back Buffer Format" Kind="InputPin" IsHidden="true" />
                     <Pin Id="GskDi2BAeB9N0oAvsdYiqN" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
@@ -28981,28 +29103,29 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="McUm69IxBzSP15X8o3AIyV" Location="VL.CoreLib" Version="2023.5.3-0327-g42e516133d" />
-  <NugetDependency Id="TrZoxHvmZwiPRwP2sqzxRR" Location="VL.Stride" Version="2023.5.3-0327-g42e516133d" />
+  <NugetDependency Id="McUm69IxBzSP15X8o3AIyV" Location="VL.CoreLib" Version="2023.5.3-0423-gee17475a3a" />
+  <NugetDependency Id="TrZoxHvmZwiPRwP2sqzxRR" Location="VL.Stride" Version="2023.5.3-0423-gee17475a3a" />
   <NugetDependency Id="H4lR7UGMskiMwuFk4oGROf" Location="VL.Fuse" Version="0.0.0.0" />
-  <NugetDependency Id="Hspjphb2FniLCnNpeiZvwB" Location="VL.Skia" Version="2023.5.3-0327-g42e516133d" />
-  <NugetDependency Id="TfGhX55Egl9MUpgHT82psV" Location="VL.CoreLib.Windows" Version="2023.5.3-0327-g42e516133d" />
+  <NugetDependency Id="Hspjphb2FniLCnNpeiZvwB" Location="VL.Skia" Version="2023.5.3-0423-gee17475a3a" />
+  <NugetDependency Id="TfGhX55Egl9MUpgHT82psV" Location="VL.CoreLib.Windows" Version="2023.5.3-0423-gee17475a3a" />
   <NugetDependency Id="NfrWSUnnpvCOgCX6E9QAlY" Location="VL.ScreenRecorder" Version="0.1.4-alpha" />
   <PlatformDependency Id="BC9fHaHDavqQB040xg5tPc" Location="System.Windows.Forms" />
   <PlatformDependency Id="O9SiXI55XFsOZwfrRUJl6o" Location="System.Drawing" />
   <PlatformDependency Id="PIRX1E7mXVVNAUsivUB8KO" Location="System.Reflection" />
-  <NugetDependency Id="UdTDKkyhAsMQMpBKt9LTeq" Location="VL.ImGui" Version="2023.5.3-0327-g42e516133d" />
-  <NugetDependency Id="EFH0jbGC1wkPvrujUZfDis" Location="VL.ImGui.Skia" Version="2023.5.3-0327-g42e516133d" />
+  <NugetDependency Id="UdTDKkyhAsMQMpBKt9LTeq" Location="VL.ImGui" Version="2023.5.3-0423-gee17475a3a" />
+  <NugetDependency Id="EFH0jbGC1wkPvrujUZfDis" Location="VL.ImGui.Skia" Version="2023.5.3-0423-gee17475a3a" />
   <DocumentDependency Id="UQ2psKpy06wNz9babAUC00" Location="./vl/VL.LoopTool.Presets.vl" IsForward="true" />
   <DocumentDependency Id="Hf2ESdJo0maPnqmjqMGH40" Location="./vl/VL.LoopTool.Animation.vl" IsForward="true" />
-  <NugetDependency Id="GnYqfNgNYRTPUpAyiSl7ME" Location="VL.Addons" Version="0.1.0" />
+  <NugetDependency Id="GnYqfNgNYRTPUpAyiSl7ME" Location="VL.Addons" Version="0.1.4" />
   <PlatformDependency Id="Ot8GugXRHoaOoy6Xb6Ry0k" Location="../../../Users/gegen/AppData/Local/vvvv/gamma-preview/nugets/VL.ScreenRecorder.0.1.4-alpha/lib/ScreenRecorderLib.dll" />
   <PlatformDependency Id="MjfLEIkcc9qObOJvYCOPVS" Location="C:/Users/gegen/AppData/Local/vvvv/gamma-preview/nugets/VL.ScreenRecorder.0.1.4-alpha/lib/netstandard2.0/VL.ScreenRecorder.dll" />
   <PlatformDependency Id="EhgnXMmPLvKNawHPNEZ2SG" Location="C:/Program Files/vvvv/vvvv_gamma_5.3-0294-g08cfc6dc6d/packs/VL.Stride.Runtime/src/bin/Debug/netstandard2.0/VL.Stride.Runtime.dll" />
   <PlatformDependency Id="DkDDsFQjWlxLZvYnaH2zzQ" Location="mscorlib.dll" />
-  <NugetDependency Id="GZV5oCMY1NPNHwq3RRYSCq" Location="VL.Core" Version="2023.5.3-0327-g42e516133d" />
+  <NugetDependency Id="GZV5oCMY1NPNHwq3RRYSCq" Location="VL.Core" Version="2023.5.3-0423-gee17475a3a" />
   <PlatformDependency Id="UX2rcPYRspYP6mX7QWnWD7" Location="C:/Program Files/vvvv/vvvv_gamma_5.3-0302-gab7ef9c671/packs/VL.Stride.Runtime/src/bin/Debug/netstandard2.0/VL.Stride.Runtime.dll" />
   <PlatformDependency Id="Lwt0REVbVXrMioEF3hAM6o" Location="C:/Program Files/vvvv/vvvv_gamma_5.3-0302-gab7ef9c671/packs/TestGame/Bin/Windows/Debug/Stride.Games.dll" />
   <PlatformDependency Id="BXKdLYRAHUCOrrsB4fcKWx" Location="C:/Program Files/vvvv/vvvv_gamma_5.3-0302-gab7ef9c671/packs/TestGame/Bin/Windows/Debug/Stride.Core.Mathematics.dll" />
-  <NugetDependency Id="IkTKLz1AB4JP9YJJXhzcJd" Location="VL.Stride.Runtime" Version="2023.5.3-0327-g42e516133d" />
+  <NugetDependency Id="IkTKLz1AB4JP9YJJXhzcJd" Location="VL.Stride.Runtime" Version="2023.5.3-0423-gee17475a3a" />
   <NugetDependency Id="FdjTeXYnSKoLjpwPkybWmr" Location="VL.LoopTool" Version="0.0.0" />
+  <NugetDependency Id="B2DD9bE1NVGMTko9SwVYa8" Location="VL.Stride.TextureFX" Version="2023.5.3-0423-gee17475a3a" />
 </Document>
