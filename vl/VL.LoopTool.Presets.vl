@@ -99,13 +99,13 @@
                   <p:sliderdirection p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SliderDirectionEnum">Vertical</p:sliderdirection>
                 </p:ValueBoxSettings>
               </Pad>
-              <Node Bounds="175,68,85,19" Id="SOvMAc3rxQGM2q4SeSRRmV">
+              <Node Bounds="125,99,145,19" Id="SOvMAc3rxQGM2q4SeSRRmV">
                 <p:NodeReference LastCategoryFullName="LoopTool.LoopTimer" LastDependency="VL.LoopTool.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="Loop" />
                 </p:NodeReference>
                 <Pin Id="S3g3cnRqvEwLbhy4g1HpnD" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="OOGcNUKpQYnNM9HXKgYTtQ" Name="Index" Kind="InputPin" />
+                <Pin Id="QU2dVjuSFvfMiJgbfjk4V7" Name="LoopType" Kind="InputPin" />
                 <Pin Id="IOgi2YYO8kNNbfn03stuRH" Name="PhaseType" Kind="InputPin" />
                 <Pin Id="Hs6K0Jk6YXHLA3qu57U5EZ" Name="Transition" Kind="InputPin" />
                 <Pin Id="NfXRL5vwkhrMZZSaX10Pk4" Name="Mode" Kind="InputPin" />
@@ -113,15 +113,19 @@
                 <Pin Id="J9Ny4BrdTiaOnGmgpCB1qZ" Name="LoopCycles" Kind="OutputPin" />
                 <Pin Id="LKbTnw58TIVLuzWYN4fIcU" Name="LoopOnNewCycle" Kind="OutputPin" />
                 <Pin Id="BRpNIP5nPEUOxKeV6q0iTR" Name="LoopInOut" Kind="OutputPin" />
+                <Pin Id="VKArM6JA5vyMamgGB9yk4h" Name="SubLoopInOut" Kind="OutputPin" />
+                <Pin Id="EqvRJWd5wauNjlW4xKTnLl" Name="SubLoopWidth" Kind="OutputPin" />
+                <Pin Id="PQzWKQow2o8LVqlzO1GQmg" Name="SubLoopIndex" Kind="OutputPin" />
+                <Pin Id="SOPPo8pOf4hOPKTvz8XQm6" Name="SubLoopCount" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="M6iNfrJ36LFMBxVBgX81Jq" Bounds="87,111" />
               <ControlPoint Id="ELfN8xzBMCPNvoQUZvg8rU" Bounds="104,133" />
               <ControlPoint Id="AObVJQikAOcQWHmXDSMzBH" Bounds="93,422" />
-              <ControlPoint Id="Jjy0WDk9IwXLbAgoiAgynn" Bounds="180,-4" />
-              <ControlPoint Id="NiGvSNn8BJiLGiIJbeEjFs" Bounds="205,21" />
-              <ControlPoint Id="GuFarvfebYwK95wWkKiV5P" Bounds="232,39" />
-              <ControlPoint Id="KaAnVNGj99tLKAgKi34Dhg" Bounds="259,54" />
+              <ControlPoint Id="NiGvSNn8BJiLGiIJbeEjFs" Bounds="173,56" />
+              <ControlPoint Id="GuFarvfebYwK95wWkKiV5P" Bounds="220,72" />
+              <ControlPoint Id="KaAnVNGj99tLKAgKi34Dhg" Bounds="267,88" />
               <ControlPoint Id="DMQQL8fAffeNPdKpxb5JgE" Bounds="10,288" />
+              <ControlPoint Id="PciBFqbJZ5tM5cz3holmIa" Bounds="129,29" />
             </Canvas>
             <ProcessDefinition Id="MjdnacG6uOiLvsdYxtNOPT">
               <Fragment Id="EQY7myYCYTbLlcVhNCEDrc" Patch="NsGH8vVI70UOzSHb3EY67Z" Enabled="true" />
@@ -138,8 +142,6 @@
             <Link Id="MYbSkstZM4BPH4NP5QkGWh" Ids="M6iNfrJ36LFMBxVBgX81Jq,NsnRaJQ6VowOADKbtc50Sv" />
             <Link Id="NIy96xv3GdOOt3JUMqBctB" Ids="KOikdhFoUHdPUn84inJD9Q,AObVJQikAOcQWHmXDSMzBH" />
             <Link Id="EeUPGHR1Q71Pb21APQI7ng" Ids="AObVJQikAOcQWHmXDSMzBH,AJilDfzVN2SL9M8c3BscWa" IsHidden="true" />
-            <Link Id="HGbersT5kxxL8VJlijGMna" Ids="Jjy0WDk9IwXLbAgoiAgynn,OOGcNUKpQYnNM9HXKgYTtQ" />
-            <Link Id="CodOXaIR7xGN7uMRAcM26c" Ids="RBWUZnxQexJOGQ4G80TVYN,Jjy0WDk9IwXLbAgoiAgynn" IsHidden="true" />
             <Link Id="KdkN6VZhuO8PoDoJLDYIhd" Ids="NiGvSNn8BJiLGiIJbeEjFs,IOgi2YYO8kNNbfn03stuRH" />
             <Link Id="Jd5Yh44HDwUPaIrda0puNe" Ids="OdvZWYbfT2sMxEO51esIvz,NiGvSNn8BJiLGiIJbeEjFs" IsHidden="true" />
             <Link Id="CtdAvWO5YHdM8Go25pLINA" Ids="GuFarvfebYwK95wWkKiV5P,Hs6K0Jk6YXHLA3qu57U5EZ" />
@@ -148,14 +150,16 @@
             <Link Id="KwSmh1OAKjfOGV0kRVRGto" Ids="UpX4fkGUSc3LNzFOYC8z7p,KaAnVNGj99tLKAgKi34Dhg" IsHidden="true" />
             <Link Id="EdVvTsSir9EMomHgo0wLEM" Ids="JIySXLkNwNkMdWpM3sCkSS,DMQQL8fAffeNPdKpxb5JgE" />
             <Link Id="Uc4bCNORBKZNOGPrzWa5zK" Ids="DMQQL8fAffeNPdKpxb5JgE,NrYyXxmb7FDOTuuIL8DaHb" IsHidden="true" />
+            <Link Id="NDQLGeyHnOjMi1gYgo3GAb" Ids="PciBFqbJZ5tM5cz3holmIa,QU2dVjuSFvfMiJgbfjk4V7" />
+            <Link Id="JMj6At70muXPmqtgF1cPB1" Ids="CCzm62MF9lJPuhJUUkqsf8,PciBFqbJZ5tM5cz3holmIa" IsHidden="true" />
             <Patch Id="NsGH8vVI70UOzSHb3EY67Z" Name="Create" />
-            <Patch Id="TjNYQ501jeFMDvQTXyISIF" Name="Update">
-              <Pin Id="VwZNYhwdRrcMJteYOUYRqF" Name="Start" Kind="InputPin" />
-              <Pin Id="TfBMk7xQrm3LyJTdR3yC7M" Name="End" Kind="InputPin" Bounds="199,15" />
-              <Pin Id="RBWUZnxQexJOGQ4G80TVYN" Name="Index" Kind="InputPin" Bounds="181,21" />
+            <Patch Id="TjNYQ501jeFMDvQTXyISIF" Name="Update" ManuallySortedPins="true">
+              <Pin Id="CCzm62MF9lJPuhJUUkqsf8" Name="LoopType" Kind="InputPin" Bounds="179,-2" />
               <Pin Id="OdvZWYbfT2sMxEO51esIvz" Name="PhaseType" Kind="InputPin" Bounds="206,46" />
               <Pin Id="UiOuYTiQq3KNfGgd0mGkiz" Name="Transition" Kind="InputPin" Bounds="233,68" />
               <Pin Id="UpX4fkGUSc3LNzFOYC8z7p" Name="Mode" Kind="InputPin" Bounds="263,79" />
+              <Pin Id="VwZNYhwdRrcMJteYOUYRqF" Name="Start" Kind="InputPin" />
+              <Pin Id="TfBMk7xQrm3LyJTdR3yC7M" Name="End" Kind="InputPin" Bounds="199,15" />
               <Pin Id="NrYyXxmb7FDOTuuIL8DaHb" Name="Pos" Kind="OutputPin" Bounds="10,288" />
               <Pin Id="AJilDfzVN2SL9M8c3BscWa" Name="Output" Kind="OutputPin" Bounds="181,477" />
             </Patch>
@@ -447,7 +451,7 @@
           </p:NodeReference>
           <Patch Id="OxuTd8J3ui9N84FQrePrPq">
             <Canvas Id="HK8vAawIcsyMdC4BrCuJGZ" CanvasType="Group">
-              <Node Bounds="102,255,346,19" Id="JdU27T6F2faMAYQjEAhhxI">
+              <Node Bounds="35,289,346,19" Id="JdU27T6F2faMAYQjEAhhxI">
                 <p:NodeReference LastCategoryFullName="LoopTool.Presets.Cameras" LastDependency="VL.LoopTool.Presets.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="VertigoCamera" />
@@ -464,12 +468,12 @@
                 <Pin Id="J8slxx5uxLXMemC8e3Trgj" Name="Camera Component" Kind="OutputPin" />
                 <Pin Id="QGmHa1vFcC2NZCoZrLSKs6" Name="Frustum" Kind="OutputPin" />
               </Node>
-              <Pad Id="Akj5Van5Y86NN0ZECCikqw" Comment="Fox" Bounds="273,225,35,15" ShowValueBox="true" isIOBox="true" Value="0.46">
+              <Pad Id="Akj5Van5Y86NN0ZECCikqw" Comment="Fox" Bounds="206,259,35,15" ShowValueBox="true" isIOBox="true" Value="0.46">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="Float32" />
                 </p:TypeAnnotation>
               </Pad>
-              <Node Bounds="269,172,85,19" Id="L2TE0KAWV5RMEunBJ4SSqw">
+              <Node Bounds="202,206,85,19" Id="L2TE0KAWV5RMEunBJ4SSqw">
                 <p:NodeReference LastCategoryFullName="Math.Ranges" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Map" />
@@ -481,23 +485,23 @@
                 <Pin Id="Ismg4Sc1YxyNeGi3won449" Name="Output Maximum" Kind="InputPin" />
                 <Pin Id="UQhb85E4sf6L88os2HmEs5" Name="Output" Kind="OutputPin" />
               </Node>
-              <Pad Id="SbnXInKaIoCNCvC0U72e00" Comment="" Bounds="330,151,35,15" ShowValueBox="true" isIOBox="true" Value="0.01">
+              <Pad Id="SbnXInKaIoCNCvC0U72e00" Comment="" Bounds="263,185,35,15" ShowValueBox="true" isIOBox="true" Value="0.01">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="Float32" />
                 </p:TypeAnnotation>
               </Pad>
-              <Pad Id="RaTPtewbElbPfS32Cw6Bix" Comment="" Bounds="375,150,35,15" ShowValueBox="true" isIOBox="true" Value="0.15">
+              <Pad Id="RaTPtewbElbPfS32Cw6Bix" Comment="" Bounds="308,184,35,15" ShowValueBox="true" isIOBox="true" Value="0.15">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="Float32" />
                 </p:TypeAnnotation>
               </Pad>
-              <Node Bounds="273,76,65,19" Id="OlQBr0TF5ffNvEdcOGgTCs">
+              <Node Bounds="206,110,145,19" Id="OlQBr0TF5ffNvEdcOGgTCs">
                 <p:NodeReference LastCategoryFullName="LoopTool.LoopTimer" LastDependency="VL.LoopTool.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="Loop" />
                 </p:NodeReference>
                 <Pin Id="RWdIJFqBEdBOUyEgpSy6ZK" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="PCflSYIZjITNeu3wsL18X6" Name="Index" Kind="InputPin" />
+                <Pin Id="C9DSP6GttAbPwQtqeLySRW" Name="LoopType" Kind="InputPin" />
                 <Pin Id="I3EKSh3Bi92M6GPHwhBZoU" Name="PhaseType" Kind="InputPin" />
                 <Pin Id="PIfl4H0L99HNZYnIKdasTK" Name="Transition" Kind="InputPin" />
                 <Pin Id="NhM9Ex08ISGNuXvyTWctbt" Name="Mode" Kind="InputPin" />
@@ -505,15 +509,19 @@
                 <Pin Id="OBeiMqaguhyL9zLQ3BTeSq" Name="LoopCycles" Kind="OutputPin" />
                 <Pin Id="JHYeQffe7qLPN6xAiSKcv5" Name="LoopOnNewCycle" Kind="OutputPin" />
                 <Pin Id="D9SYd7VM4TAPypXCyu0vxw" Name="LoopInOut" Kind="OutputPin" />
+                <Pin Id="PV0gPi9lyNrNhYC5LKWz4A" Name="SubLoopInOut" Kind="OutputPin" />
+                <Pin Id="SffTsy7TOPPNeQN1I3wDbs" Name="SubLoopWidth" Kind="OutputPin" />
+                <Pin Id="Mc9ojfWA2h5QMAoKk10Bm7" Name="SubLoopIndex" Kind="OutputPin" />
+                <Pin Id="AmrTlkvlZonPH66u0ImXjq" Name="SubLoopCount" Kind="OutputPin" />
               </Node>
-              <ControlPoint Id="F6DoARDMvPyMhUkRd78Nr5" Bounds="107,312" />
-              <ControlPoint Id="HxTgxLDUQroL7kl5BcpjdX" Bounds="277,10" />
-              <ControlPoint Id="GCUyxHrGDibNGeBKJOZEe5" Bounds="297,33" />
-              <ControlPoint Id="ImA60WTHVXrPCQtXdIuFeM" Bounds="321,44" />
-              <ControlPoint Id="CRAeIyo4lJMNprJKuHL5SZ" Bounds="338,53" />
-              <ControlPoint Id="PMifwhf8Z3dPFa2xzHATRI" Bounds="437,209" />
-              <ControlPoint Id="H5xOods1qdaMjb3rYD7vjN" Bounds="360,229" />
-              <ControlPoint Id="LJux2aF2rA0PkC9YCWKtlz" Bounds="391,114" />
+              <ControlPoint Id="F6DoARDMvPyMhUkRd78Nr5" Bounds="37,339" />
+              <ControlPoint Id="GCUyxHrGDibNGeBKJOZEe5" Bounds="253,52" />
+              <ControlPoint Id="ImA60WTHVXrPCQtXdIuFeM" Bounds="302,73" />
+              <ControlPoint Id="CRAeIyo4lJMNprJKuHL5SZ" Bounds="349,93" />
+              <ControlPoint Id="PMifwhf8Z3dPFa2xzHATRI" Bounds="370,243" />
+              <ControlPoint Id="H5xOods1qdaMjb3rYD7vjN" Bounds="293,263" />
+              <ControlPoint Id="LJux2aF2rA0PkC9YCWKtlz" Bounds="324,148" />
+              <ControlPoint Id="HjX3Dx9mqgnQRbkQYS6r9c" Bounds="207,22" />
             </Canvas>
             <ProcessDefinition Id="GT1SdsKDqJxNuNsW0NTnoX">
               <Fragment Id="BtIgJBk2qtQO5LORL8l26j" Patch="Bv5WU4btczvPGEULsHl7qD" Enabled="true" />
@@ -526,8 +534,6 @@
             <Link Id="IL2DTFYBNEBM4B4m2Bam0g" Ids="DJ8vMpK9iClL7mf45NvXSu,Ifz7eiRCSNhPivP6JlMtBm" />
             <Link Id="RRDgwY5wDRKOq9AlinuGjZ" Ids="R3zPVlktNhYPcDfsiEn5dG,F6DoARDMvPyMhUkRd78Nr5" />
             <Link Id="RSt3vlyduXrMtgUBuSpI7a" Ids="F6DoARDMvPyMhUkRd78Nr5,OkiG2gfGlzXPU7ziIJZGoH" IsHidden="true" />
-            <Link Id="OTxh7jHldwNOKJXvmm9k9T" Ids="HxTgxLDUQroL7kl5BcpjdX,PCflSYIZjITNeu3wsL18X6" />
-            <Link Id="Es8h5FYoZa2PRnLhDBGnra" Ids="SNeSftFELHWOkuEyK5KHcP,HxTgxLDUQroL7kl5BcpjdX" IsHidden="true" />
             <Link Id="PGLH6kAsunFM4qpqnu2Gim" Ids="GCUyxHrGDibNGeBKJOZEe5,I3EKSh3Bi92M6GPHwhBZoU" />
             <Link Id="JW90DS2zmmtLbYSqgMtkOG" Ids="GlvnyDAQb84PABBK9ocTzc,GCUyxHrGDibNGeBKJOZEe5" IsHidden="true" />
             <Link Id="T2vECFjsyokO42hZiyjUnv" Ids="ImA60WTHVXrPCQtXdIuFeM,PIfl4H0L99HNZYnIKdasTK" />
@@ -540,9 +546,11 @@
             <Link Id="I2c7916lhAmPhO4paf0Mu5" Ids="FuVDq4VQ8OfOETEpo6Ldl7,H5xOods1qdaMjb3rYD7vjN" IsHidden="true" />
             <Link Id="RXph5tLJJ8YNhZ9T3iWbIs" Ids="LJux2aF2rA0PkC9YCWKtlz,RaTPtewbElbPfS32Cw6Bix" />
             <Link Id="McWbQ3xQtm0MyXNo5ksHdx" Ids="Vav5I6Po0rcQBuNuRSmHVk,LJux2aF2rA0PkC9YCWKtlz" IsHidden="true" />
+            <Link Id="KARq8SyXXLSOz8W5u2WgWJ" Ids="HjX3Dx9mqgnQRbkQYS6r9c,C9DSP6GttAbPwQtqeLySRW" />
+            <Link Id="SOVllSGbXQDMhTe331Vb7M" Ids="KoyoPQ1xIPEMEt0CgFLt7C,HjX3Dx9mqgnQRbkQYS6r9c" IsHidden="true" />
             <Patch Id="Bv5WU4btczvPGEULsHl7qD" Name="Create" />
-            <Patch Id="SeNULxNYRqpMAeeaZdz8Hi" Name="Update">
-              <Pin Id="SNeSftFELHWOkuEyK5KHcP" Name="Index" Kind="InputPin" Bounds="276,36" />
+            <Patch Id="SeNULxNYRqpMAeeaZdz8Hi" Name="Update" ManuallySortedPins="true">
+              <Pin Id="KoyoPQ1xIPEMEt0CgFLt7C" Name="LoopType" Kind="InputPin" Bounds="276,-30" />
               <Pin Id="GlvnyDAQb84PABBK9ocTzc" Name="PhaseType" Kind="InputPin" Bounds="299,56" />
               <Pin Id="CGuU3BXyaifQIt1XiFni5W" Name="Transition" Kind="InputPin" Bounds="320,53" />
               <Pin Id="IYYX8FjUvpuOLxZu66KM8A" Name="Mode" Kind="InputPin" Bounds="337,62" />
@@ -595,13 +603,13 @@
                 <Pin Id="A85cmpIedYOL9GWphl7BeY" Name="Camera Component" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="FP9QkZfd3WpO3SqiSpems3" Bounds="80,172" />
-              <Node Bounds="144,-74,65,19" Id="Q3Chm3bAiclLVmudcoXcEr">
+              <Node Bounds="144,-74,85,19" Id="Q3Chm3bAiclLVmudcoXcEr">
                 <p:NodeReference LastCategoryFullName="LoopTool.LoopTimer" LastDependency="VL.LoopTool.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="Loop" />
                 </p:NodeReference>
                 <Pin Id="VU2vVvogVnbPphTZKwYFmh" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="RJm5HPJOkd2QFuNxUYhyA4" Name="Index" Kind="InputPin" />
+                <Pin Id="NcUEsDHma5qQT0N9iG7z1d" Name="LoopType" Kind="InputPin" />
                 <Pin Id="CanRJIhfi9lOJ7FnBph0k9" Name="PhaseType" Kind="InputPin" />
                 <Pin Id="SMrKNUXpUIlPVZhwsiH4xA" Name="Transition" Kind="InputPin" />
                 <Pin Id="Sz0OL6KVUjMMZl4afbXUnc" Name="Mode" Kind="InputPin" />
@@ -609,15 +617,19 @@
                 <Pin Id="Oqf6krRJW32QJ4zoPUO0uP" Name="LoopCycles" Kind="OutputPin" />
                 <Pin Id="EEubnx0VPiZOgDOOB8jWkK" Name="LoopOnNewCycle" Kind="OutputPin" />
                 <Pin Id="Cd456wk54MIO4M4RZfkDPG" Name="LoopInOut" Kind="OutputPin" />
+                <Pin Id="UETBDiCx0knOgWHkh2c3s9" Name="SubLoopInOut" Kind="OutputPin" />
+                <Pin Id="BedtVxdu0vRLbnFFXPJO0E" Name="SubLoopWidth" Kind="OutputPin" />
+                <Pin Id="AYpivibqwfoP3UyyfsvvrF" Name="SubLoopIndex" Kind="OutputPin" />
+                <Pin Id="EPTaUMFdcgwMBOtEviDI2m" Name="SubLoopCount" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="PGuddpMDxNUOX6PfUHrjOz" Bounds="321,-35" />
               <ControlPoint Id="Jh4AAhXWUidMCcsZZQgGKH" Bounds="413,-31" />
-              <ControlPoint Id="CqHFnEY4OnjMe6ffVqQxUU" Bounds="148,-165" />
-              <ControlPoint Id="FnG6tWa7WfoL2YMYCgwKQS" Bounds="169,-146" />
-              <ControlPoint Id="KHLDM1u5bHvOaFEDidOfhI" Bounds="189,-121" />
-              <ControlPoint Id="QyiGMdCHha0OurfXPpH3Q4" Bounds="204,-97" />
+              <ControlPoint Id="FnG6tWa7WfoL2YMYCgwKQS" Bounds="175,-144" />
+              <ControlPoint Id="KHLDM1u5bHvOaFEDidOfhI" Bounds="201,-120" />
+              <ControlPoint Id="QyiGMdCHha0OurfXPpH3Q4" Bounds="225,-98" />
               <ControlPoint Id="MOjNoYeeS4ELZjcKBUEGub" Bounds="288,-61" />
               <ControlPoint Id="BTQEnriJdK0NqsCLIntmyS" Bounds="371,-103" />
+              <ControlPoint Id="ITU1xGbBp1jNo0Nx1bjodv" Bounds="147,-169" />
             </Canvas>
             <ProcessDefinition Id="Kj9fafk4oU1LyaDXLDkQb1">
               <Fragment Id="SqmxwlNGfiXOyHs6FLRAV4" Patch="NLWKVR1RjYLNhplffExUXM" Enabled="true" />
@@ -630,8 +642,6 @@
             <Link Id="H4oeBfzN0iYMyjLHWrcW4c" Ids="Jh4AAhXWUidMCcsZZQgGKH,P2C5g9ohy6iPjhw6CBcG2r" />
             <Link Id="HrnLD1KCVb4Oc5w8o7wFWN" Ids="KFRGy3JeLLyMFRmIV63Ei5,Jh4AAhXWUidMCcsZZQgGKH" IsHidden="true" />
             <Link Id="H6VfL4uQ60mNmQSpo5wg1p" Ids="ARyG8dK1BQPNzGyY7yDobi,FIkBSQqwkroOl4E2ikttd9" />
-            <Link Id="H9LJEl5v1OSQGjWZ3eABxm" Ids="CqHFnEY4OnjMe6ffVqQxUU,RJm5HPJOkd2QFuNxUYhyA4" />
-            <Link Id="RVdx2nqklZAPsu71SxG0kc" Ids="HuDgkBAGCrlM1XVINL70AZ,CqHFnEY4OnjMe6ffVqQxUU" IsHidden="true" />
             <Link Id="CpV35S5RzcmNN1L579nF3J" Ids="FnG6tWa7WfoL2YMYCgwKQS,CanRJIhfi9lOJ7FnBph0k9" />
             <Link Id="JkrAJcjZXkTQXZ866txJlb" Ids="JAEsoVkLtuhLeOgheUAi5q,FnG6tWa7WfoL2YMYCgwKQS" IsHidden="true" />
             <Link Id="RG9ASsFd014NUHYaG5JQS8" Ids="KHLDM1u5bHvOaFEDidOfhI,SMrKNUXpUIlPVZhwsiH4xA" />
@@ -642,9 +652,11 @@
             <Link Id="QE5BY0K39BtPmlQsIPT14m" Ids="AmmuYQevvyAM2dtdiiAE30,MOjNoYeeS4ELZjcKBUEGub" IsHidden="true" />
             <Link Id="JC0MxPZ1g74LqKfNjtqCJF" Ids="BTQEnriJdK0NqsCLIntmyS,CT40O7lY0smQEi75Ds1WVU" />
             <Link Id="CBgPV00FXOpMY0NUHgkjcn" Ids="En1n2EZgGVKOwB5JTz6kDo,BTQEnriJdK0NqsCLIntmyS" IsHidden="true" />
+            <Link Id="DhBnpRwFtZGOg8gbaBRCNF" Ids="ITU1xGbBp1jNo0Nx1bjodv,NcUEsDHma5qQT0N9iG7z1d" />
+            <Link Id="GC3thPlm1i1PZ9vity1bMX" Ids="RLk567kUNw4OYbJkct6Pso,ITU1xGbBp1jNo0Nx1bjodv" IsHidden="true" />
             <Patch Id="NLWKVR1RjYLNhplffExUXM" Name="Create" />
             <Patch Id="UYbWh0205tAOVDFb44dhBX" Name="Update">
-              <Pin Id="HuDgkBAGCrlM1XVINL70AZ" Name="Index" Kind="InputPin" Bounds="62,-46" />
+              <Pin Id="RLk567kUNw4OYbJkct6Pso" Name="LoopType" Kind="InputPin" Bounds="146,-206" />
               <Pin Id="JAEsoVkLtuhLeOgheUAi5q" Name="PhaseType" Kind="InputPin" Bounds="84,-24" />
               <Pin Id="PjCbf5XsmWpOxau2aSRH23" Name="Transition" Kind="InputPin" Bounds="102,12" />
               <Pin Id="UZcL2oenMepMPKCYqjA3ds" Name="Mode" Kind="InputPin" Bounds="123,21" />
