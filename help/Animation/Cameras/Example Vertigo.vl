@@ -84,7 +84,7 @@
             </p:NodeReference>
             <Pin Id="HkVAqfl3ZTMQVN7Tv0VTWg" Name="LoopToolSettings" Kind="InputPin">
               <p:DefaultValue>
-                <LoopModel CustomSubLoopCount="2" LoopTime="10" />
+                <LoopModel CustomSubLoopCount="2" LoopTime="10" WaitTime="9.5" />
                 <RecorderModel Filename="ScoopTheLoop" Path="C:\Users\gegen\Desktop">
                   <Recorders>
                     <ImageRecorder OutputPath="C:\Users\gegen\Desktop\ScoopTheLoop\Image\">
@@ -100,7 +100,7 @@
                         <Item>Tga</Item>
                       </FileTypes>
                     </ImageRecorder>
-                    <NRTSequenceRecorder FPS="60" OutputPath="C:\Users\gegen\Desktop\ScoopTheLoop\NRT\ScoopTheLoop_24_0105_0706">
+                    <NRTSequenceRecorder FPS="60" OutputPath="C:\Users\gegen\Desktop\ScoopTheLoop\NRT\ScoopTheLoop_24_0111_0843">
                       <FileTypes>
                         <Item>Stride</Item>
                         <Item>Dds</Item>
@@ -177,7 +177,7 @@
             <Pin Id="AgDWNUzt0o8LnvJOy0t99w" Name="Enabled" Kind="InputPin" />
             <Pin Id="AZuj40anneGNF0SZFrYtz1" Name="Entity" Kind="OutputPin" />
           </Node>
-          <Node Bounds="316,1140,225,19" Id="K6GZ5D95fSOOmk9sIyyJkt">
+          <Node Bounds="308,1146,225,19" Id="K6GZ5D95fSOOmk9sIyyJkt">
             <p:NodeReference LastCategoryFullName="Stride.Rendering" LastDependency="VL.Stride.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessNode" Name="PostFX" />
@@ -197,7 +197,7 @@
             <Pin Id="FPj1WPPIpT5QRbUw3uGl1q" Name="Antialiasing" Kind="InputPin" />
             <Pin Id="UcaZ39LQCORNE0yM6y7wrh" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="316,1107,185,19" Id="E4FwI0VqBHYN4l7KldkXzX">
+          <Node Bounds="308,1113,185,19" Id="E4FwI0VqBHYN4l7KldkXzX">
             <p:NodeReference LastCategoryFullName="Stride.Rendering.PostFX" LastDependency="VL.Stride.Rendering.Nodes">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessNode" Name="AmbientOcclusion" />
@@ -455,13 +455,13 @@
               <Choice Kind="TypeFlag" Name="Vector3" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="381,746,65,19" Id="N38SYAz0YWINb9i9DR4NcF">
+          <Node Bounds="381,746,145,19" Id="N38SYAz0YWINb9i9DR4NcF">
             <p:NodeReference LastCategoryFullName="LoopTool.LoopTimer" LastDependency="VL.LoopTool.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Loop" />
             </p:NodeReference>
             <Pin Id="LIPZsWyomEcNtcfG1LkvGq" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="JIOyN828RLhMQfgBDDK8Hh" Name="Index" Kind="InputPin" DefaultValue="2" />
+            <Pin Id="CFNUJShWOXXNW9yubIRpMj" Name="LoopType" Kind="InputPin" />
             <Pin Id="EEW0OYnQkJcMZLk9SwTls3" Name="PhaseType" Kind="InputPin" DefaultValue="InOut" />
             <Pin Id="B6N9ePM18IyMCmNwBKnspd" Name="Transition" Kind="InputPin" />
             <Pin Id="H0M1UXjLouHM8ioC2Qt16y" Name="Mode" Kind="InputPin" />
@@ -469,6 +469,11 @@
             <Pin Id="AuYDyl1B8j1NxGdQGxzdF4" Name="LoopCycles" Kind="OutputPin" />
             <Pin Id="Baykd8GUOCOPTlJZ8BMK4P" Name="LoopOnNewCycle" Kind="OutputPin" />
             <Pin Id="QjFrO554AfUNUvGOKmmywS" Name="LoopInOut" Kind="OutputPin" />
+            <Pin Id="JWOaeLmplavPsoAJggCt9n" Name="SubLoopInOut" Kind="OutputPin" />
+            <Pin Id="BqB78dUcAU1LM8qScJYRGk" Name="SubLoopWidth" Kind="OutputPin" />
+            <Pin Id="I2TTbUKeROrNScRiyKNIUJ" Name="SubLoopIndex" Kind="OutputPin" />
+            <Pin Id="AeBvIxI6nTCLtGl4LT4vtR" Name="SubLoopCount" Kind="OutputPin" />
+            <Pin Id="JIOyN828RLhMQfgBDDK8Hh" Name="Index" Kind="InputPin" DefaultValue="2" />
           </Node>
           <Node Bounds="260,1195,125,19" Id="BDbMTho1vMuPe5XIrRnCpD">
             <p:NodeReference LastCategoryFullName="LoopTool.Presets.Cameras" LastDependency="VL.LoopTool.vl">
@@ -476,7 +481,7 @@
               <Choice Kind="ProcessAppFlag" Name="VertigoCamera (LoopTool)" />
             </p:NodeReference>
             <Pin Id="N9lnbVLVeyEPTD3xyyz7pP" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="LPFx3krPrK6MZWVgZHzote" Name="Index" Kind="InputPin" />
+            <Pin Id="Fe50DmoXDe3NwCYuA8W4r1" Name="LoopType" Kind="InputPin" DefaultValue="Loop" />
             <Pin Id="OVhPdojEtTqLLhG8ALTFcK" Name="PhaseType" Kind="InputPin" />
             <Pin Id="UG0ZsWignsjNA9k1Lf1ZpV" Name="Transition" Kind="InputPin" />
             <Pin Id="NGeJatYZHliMhTDMFFetfe" Name="Mode" Kind="InputPin" />

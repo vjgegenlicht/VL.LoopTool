@@ -2,7 +2,7 @@
 <Document xmlns:p="property" xmlns:r="reflection" Id="COt0TYjoglbNpoz2vg7gQm" LanguageVersion="2023.5.3-0423-gee17475a3a" Version="0.128">
   <NugetDependency Id="Rq1hxtGm4prLgcbPnzpr1q" Location="VL.CoreLib" Version="2023.5.3-0423-gee17475a3a" />
   <Patch Id="EflKC5Ddi2BN1mZWLv60qK">
-    <Canvas Id="NBB3K3ClmntMsyQxzUGU5L" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <Canvas Id="NBB3K3ClmntMsyQxzUGU5L" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
 
     ************************ Application ************************
@@ -74,7 +74,7 @@
             </p:NodeReference>
             <Pin Id="QR4yVFJR64pM2tmRTf3Zzp" Name="LoopToolSettings" Kind="InputPin">
               <p:DefaultValue>
-                <LoopModel CustomSubLoopCount="3" LoopTime="10" ManualValue="0.277027" />
+                <LoopModel CustomSubLoopCount="3" LoopTime="10" ManualValue="0.283784" />
                 <RecorderModel Filename="ScoopTheLoop" Path="C:\Users\gegen\Desktop">
                   <Recorders>
                     <ImageRecorder OutputPath="C:\Users\gegen\Desktop\ScoopTheLoop\Image\">
@@ -90,7 +90,7 @@
                         <Item>Tga</Item>
                       </FileTypes>
                     </ImageRecorder>
-                    <NRTSequenceRecorder FPS="60" OutputPath="C:\Users\gegen\Desktop\ScoopTheLoop\NRT\ScoopTheLoop_24_0105_0715">
+                    <NRTSequenceRecorder FPS="60" OutputPath="C:\Users\gegen\Desktop\ScoopTheLoop\NRT\ScoopTheLoop_24_0111_0806">
                       <FileTypes>
                         <Item>Stride</Item>
                         <Item>Dds</Item>
@@ -107,13 +107,13 @@
                   </Recorders>
                 </RecorderModel>
                 <UtilModel BlendTime="0.2" />
-                <VideoModel CustomResX="1024" CustomResY="1024" WindowAnchor="TopLeft">
+                <VideoModel CustomResX="1024" CustomResY="1024" VideoResolutionIndex="3" WindowAnchor="TopLeft">
                   <ScreenNames>
                     <Item>\\.\DISPLAY1</Item>
                     <Item>\\.\DISPLAY2</Item>
                   </ScreenNames>
                   <Screens />
-                  <VideoResolution AspectX="1" AspectXY="1, 1" AspectY="1" Name="Instagram 1:1 1080*1080" Resolution="1080, 1080" />
+                  <VideoResolution AspectX="1" AspectXY="1, 1" AspectY="1" Name="Twitter 1:1 720*720 " Resolution="720, 720" />
                   <VideoResolutionNames>
                     <Item>Instagram 1:1 1080*1080</Item>
                     <Item>Instagram Reel 9:16 1080*1920</Item>
@@ -148,7 +148,7 @@
               <Choice Kind="ProcessAppFlag" Name="TurnTableCamera (LoopTool)" />
             </p:NodeReference>
             <Pin Id="MlDObgIISg4LnRZtROLhLo" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="Oc9qCZqWdjRMxSr08bEprx" Name="Index" Kind="InputPin" />
+            <Pin Id="OBX8Y5JS4a7NMu8BIiH2ww" Name="LoopType" Kind="InputPin" DefaultValue="Loop" />
             <Pin Id="USaNRWYW8ndMnaXBxYLexG" Name="PhaseType" Kind="InputPin" DefaultValue="In" />
             <Pin Id="I9PRqSA08RSN3H1ckqJVt5" Name="Transition" Kind="InputPin" />
             <Pin Id="HREk14VSdgPOcZ2hd3AEor" Name="Mode" Kind="InputPin" />
@@ -226,6 +226,32 @@
               <Choice Kind="TypeFlag" Name="Vector3" />
             </p:TypeAnnotation>
           </Pad>
+          <Node Bounds="370,421,145,19" Id="FqhyqXXEtr5O8EoomGMtFd">
+            <p:NodeReference LastCategoryFullName="LoopTool.LoopTimer" LastDependency="VL.LoopTool.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Loop" />
+            </p:NodeReference>
+            <Pin Id="B0E1xvtuyyrMO0pkBTijHe" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="V1BVrZeL8XZLBWJsdrtHdz" Name="LoopType" Kind="InputPin" />
+            <Pin Id="CjkFKU1SSDFLXBI9azvDJ8" Name="PhaseType" Kind="InputPin" />
+            <Pin Id="U2iPzleOfDBPzFVuArLEOm" Name="Transition" Kind="InputPin" />
+            <Pin Id="Gy5uRtHZ5ZUOim8crFgJL5" Name="Mode" Kind="InputPin" />
+            <Pin Id="AX4MHCkGNraNTEbNarUyUb" Name="Output" Kind="OutputPin" />
+            <Pin Id="BzXLokhs8wOLIpnFy9mkvb" Name="LoopCycles" Kind="OutputPin" />
+            <Pin Id="G2NBocBtVRwL8FbZitToNk" Name="LoopOnNewCycle" Kind="OutputPin" />
+            <Pin Id="D8oqsJ0JjcbLejRyTccL16" Name="LoopInOut" Kind="OutputPin" />
+            <Pin Id="DEpuYNmwom1LlLKA1WMflp" Name="SubLoopInOut" Kind="OutputPin" />
+            <Pin Id="IkauMkl2X9HPrYLzcivx7E" Name="SubLoopWidth" Kind="OutputPin" />
+            <Pin Id="SLjVb4M6fGlQYU0R2gsSVz" Name="SubLoopIndex" Kind="OutputPin" />
+            <Pin Id="T4aDa1TtcwXLAbUVVdjkrP" Name="SubLoopCount" Kind="OutputPin" />
+          </Node>
+          <Pad Id="HYXyNFgCHnmQAQnTP38oax" Comment="" Bounds="372,394,101,15" ShowValueBox="true" isIOBox="true" Value="CustomSubLoop">
+            <p:TypeAnnotation LastCategoryFullName="LoopTool" LastDependency="VL.LoopTool.vl">
+              <Choice Kind="TypeFlag" Name="LoopTypes" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="HO8SwglyNWCPplMrZayZ5Y" Comment="" Bounds="372,482,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="NJ1GaTRE9RmMS6nCifavqn" Comment="SubLoopCount" Bounds="513,464,35,15" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <Patch Id="MlJDEAkmWSCNFrBbC1wcnK" Name="Create" />
         <Patch Id="FH0PMPoKAjCPHHW3NlP1Bj" Name="Update" />
@@ -242,6 +268,9 @@
         <Link Id="S4dF8ilGPXXNtMmHalpS8c" Ids="VqC6qrjH2FePVcuHsW5Af1,UZX7MA3iPdpQRgEtHUmH6d" />
         <Link Id="Ei1sSzUuA3KNodbZYEGzp8" Ids="JgGKw6us1A1P1YDIlbuekY,F3GxWtMG7rJOxReXwdGwAj" />
         <Link Id="TBm5FLntvRAOx9LszfztnA" Ids="GAVkwxveKdzMCdTDaPNytM,CWsRTyhc7EyPxLQtKtVdZs" />
+        <Link Id="MUWOzJmzO8dL4TphDDcSXk" Ids="HYXyNFgCHnmQAQnTP38oax,V1BVrZeL8XZLBWJsdrtHdz" />
+        <Link Id="PhZDqWffprHLKVo2qZQSzs" Ids="AX4MHCkGNraNTEbNarUyUb,HO8SwglyNWCPplMrZayZ5Y" />
+        <Link Id="QyK9Ft6tkmqNn41RtsCb1j" Ids="T4aDa1TtcwXLAbUVVdjkrP,NJ1GaTRE9RmMS6nCifavqn" />
       </Patch>
     </Node>
   </Patch>
