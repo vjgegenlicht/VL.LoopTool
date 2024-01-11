@@ -1,0 +1,4 @@
+E:\_projekte\Git\VL-Libs\VL.LoopTool\csharp\VL.LoopTool\bin\Debug\net6.0\VL.LoopTool.deps.json
+E:\_projekte\Git\VL-Libs\VL.LoopTool\csharp\VL.LoopTool\obj\Debug\net6.0\VL.LoopTool.GeneratedMSBuildEditorConfig.editorconfig
+E:\_projekte\Git\VL-Libs\VL.LoopTool\csharp\VL.LoopTool\obj\Debug\net6.0\VL.LoopTool.AssemblyInfoInputs.cache
+E:\_projekte\Git\VL-Libs\VL.LoopTool\csharp\VL.LoopTool\obj\Debug\net6.0\VL.LoopTool.AssemblyInfo.cs
