@@ -2,11 +2,12 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.LoopTool</id>
-    <version>0.5.4</version>
+    <version>0.5.5</version>
     <title>VL.LoopTool</title>
     <authors>Bryan Moll</authors>
     <owners>gegenlicht</owners>
     <projectUrl>https://github.com/vjgegenlicht/VL.LoopTool</projectUrl>
+    <icon>assets\ui\LoopToolCircleDarkIcon.png</icon>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>A small toolset to create and record video loops in VVVV Gamma</summary>
     <description>A collection of useful nodes designed to simplify the creation of repeating loop animations in VVVV Gamma. This addon includes animation nodes that respond to a global sequencer, making it easy to create smooth tween animations. Additionally, it provides animated camera and scene presets. The second part of this addon is a toolkit for capturing video, image sequences and images.</description>
