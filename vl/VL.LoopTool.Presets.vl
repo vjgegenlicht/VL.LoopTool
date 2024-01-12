@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="L9ptbwdlTdKPp6PkE5ppHJ" LanguageVersion="2023.5.3-0423-gee17475a3a" Version="0.128">
-  <NugetDependency Id="KHAYBS4Q8WEMt1L0dYWpH8" Location="VL.CoreLib" Version="2023.5.3-0423-gee17475a3a" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="L9ptbwdlTdKPp6PkE5ppHJ" LanguageVersion="2023.5.3-0450-g34173d70fc" Version="0.128">
+  <NugetDependency Id="KHAYBS4Q8WEMt1L0dYWpH8" Location="VL.CoreLib" Version="2023.5.3-0450-g34173d70fc" />
   <Patch Id="KmkXvWndOxqQP9DvtVkOdv">
     <Canvas Id="FjlUaP8wREsL04LpIFXYMV" DefaultCategory="LoopTool.Presets" CanvasType="FullCategory">
       <Canvas Id="KZWbvRIeMWSMoXhxCFIFsc" Name="Cameras" Position="89,250">
@@ -1655,7 +1655,6 @@
                     <Pin Id="AcOs3YnQ44vNRKbvyRnBGx" Name="Texture" Kind="InputPin" />
                     <Pin Id="LRtPuTVrCLDOR596hE42U4" Name="Fallback Color" Kind="InputPin" />
                     <Pin Id="RxP23Hat4iOPYAv2D9yTPL" Name="Fallback Color Premultiply Alpha" Kind="InputPin" />
-                    <Pin Id="HilxvOzy3iNM4nVJ2H096S" Name="Is Normal" Kind="InputPin" />
                     <Pin Id="SccLqFN0aqgPrPTvdoRtR8" Name="Texcoord Index" Kind="InputPin" />
                     <Pin Id="O6JGOfENRnTM0VYcESWaB4" Name="Filtering" Kind="InputPin" />
                     <Pin Id="TSwzYUZTXH7OmqxzRA0CEs" Name="Address Mode U" Kind="InputPin" />
@@ -1750,8 +1749,8 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="V3n2gG1UYMTMQNJ7cIN9ef" Location="VL.Stride" Version="2023.5.3-0423-gee17475a3a" />
+  <NugetDependency Id="V3n2gG1UYMTMQNJ7cIN9ef" Location="VL.Stride" Version="2023.5.3-0450-g34173d70fc" />
   <DocumentDependency Id="LOT2qJkWGBBPThhhnhYQDF" Location="../VL.LoopTool.vl" />
-  <NugetDependency Id="Jv2uJhNYqOMMgSKYbqQura" Location="VL.Stride.TextureFX" Version="2023.5.3-0423-gee17475a3a" />
+  <NugetDependency Id="Jv2uJhNYqOMMgSKYbqQura" Location="VL.Stride.TextureFX" Version="2023.5.3-0450-g34173d70fc" />
   <NugetDependency Id="OtqD0hpoPibNtyDuJROAHJ" Location="VL.LoopTool" Version="0.0.0" />
 </Document>

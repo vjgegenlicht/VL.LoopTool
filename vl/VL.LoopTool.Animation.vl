@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="SacGQwfj38QNN06D7qVNdP" LanguageVersion="2023.5.3-0423-gee17475a3a" Version="0.128">
-  <NugetDependency Id="EP6PmgR81BCPLRalzXL83O" Location="VL.CoreLib" Version="2023.5.3-0423-gee17475a3a" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="SacGQwfj38QNN06D7qVNdP" LanguageVersion="2023.5.3-0450-g34173d70fc" Version="0.128">
+  <NugetDependency Id="EP6PmgR81BCPLRalzXL83O" Location="VL.CoreLib" Version="2023.5.3-0450-g34173d70fc" />
   <Patch Id="MQils88rWKaNYEKMls0005">
     <Canvas Id="DdVmuqeAse0MMusZAwlyNJ" DefaultCategory="LoopTool.Animation" CanvasType="FullCategory">
       <!--
