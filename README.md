@@ -1,21 +1,26 @@
+
+## VL.LoopTool 
+
 <p align="left">
-<img src="assets/ui/LoopToolColor_300px.png" title="" alt="LoopTool Logo"> 
+<img src="assets/ui/LoopToolDark_300px.png" title="" alt="LoopTool Logo"> 
 </p> 
 
- 
-# VL.LoopTool 
 A small toolset to create video loops and record them in VVVV Gamma
 
 
 
 ## Installation
 
-- Currently tested with vvvv gamma above 5.2. Get it [here](https://visualprogramming.net/)
+- Currently tested with vvvv gamma 5.2. and above. Get it [here](https://visualprogramming.net/)
 - Open the nuget commandline inside VVVV via Quadmenu  > Manage nugets  > Commandline and enter:
 
 ```
 nuget install vl.looptool -pre
 ```
+## Usage
+- The core of looptool is the SceneWindows(LoopTool) node which adds the custom renderer and UI to your scene.
+- To get the phase of the looptool UI use the Loop node.
+- Press F1 and search for LoopTool inside the help browser to explore some example animations.
 
 ## Features
 
@@ -34,7 +39,7 @@ nuget install vl.looptool -pre
 
 Looptool is my personal attempt to make my own creative process as easy and fun as possible. 
 At this stage of development im still trying to define and create the toolset that fits this purpose.
-Breaking changes will be very common for the animation node set. I will do my best to keep the recording as consistent as i can.
+Breaking changes are to be expected. I will do my best to keep the recording as consistent as i can.
 
 ## Contributing
 
@@ -44,8 +49,5 @@ Help contributions and suggestions are very welcome. Consider creating an issue 
 
 - [VL.ScreenRecorder](https://github.com/vvvv/VL.ScreenRecorder)
 - [VL.Addons](https://github.com/bj-rn/VL.Addons)
-- [VL.AlchemX](https://github.com/KairosResearchLab/Kairos)
-
-
 
 [![vvvv](https://img.shields.io/static/v1?label=MADE%20WITH&message=VVVV&color=191919&style=for-the-badge)](https://visualprogramming.net/)
