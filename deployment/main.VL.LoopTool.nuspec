@@ -17,10 +17,12 @@
     <licenseUrl>https://licenses.nuget.org/LGPL-3.0-only</licenseUrl>
     <dependencies>
       <dependency id="VL.ScreenRecorder" version="0.1.4-alpha" />
+      <dependency id="VL.Addons" version="0.2.1" />
     </dependencies>
   </metadata>
   <files>
   <file src="..\*.vl" target="" exclude="" />
+  <file src="..\lib\net6.0\*.dll" target="lib\net6.0" />
   <file src="..\assets\**" target="assets\" exclude="" />
   <file src="..\help\**" target="help\" exclude="" />
   <file src="..\shaders\**" target="shaders\" exclude="" />
