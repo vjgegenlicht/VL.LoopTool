@@ -1936,10 +1936,18 @@
             <Link Id="Q0SZxslgBLEOvSZl7aPnft" Ids="LqXNwtt4MhxOcbudm0KRjA,Q6b839YvBhYPDPSUtfHco3" />
             <Link Id="VNSqd3bv5kSPZXiov1ZjV3" Ids="DKEzBcZEzLnOCYBMiX7SMe,KqlEkaqc5ccLthE8AJsRKM" />
             <Link Id="KTv3f9G4Sf6ONbmgs2MD2y" Ids="RYRTEXgRpKaL7N37NwSmsG,EGfheJAqrMpNJGqhuEDi8C" />
+            <Link Id="QN4WaRSwvWzMhEP7yZxBNI" Ids="M2whET0CQHMNOJP1mHeStp,KN3S5W4rcNGLSHTQF7x1k8" />
+            <Link Id="M3SmfsuWg3DLXxIOga2S8l" Ids="KN3S5W4rcNGLSHTQF7x1k8,AtVEPbteejQLOTI4a0POFr" IsHidden="true" />
+            <Link Id="U0ouq8iWAkZQY9NUlocO3d" Ids="D71Pa8mq3owOhYfSTkAbhS,TEMop2NwzsINHaWkbf4cT3" />
+            <Link Id="G4EK29aatQILLRds6Uyoy6" Ids="TEMop2NwzsINHaWkbf4cT3,PEgnh6BZJ7PNt5OWhJuLdE" IsHidden="true" />
+            <Link Id="GyvpnPNgeK4OalvorcK7Qm" Ids="TSRCtWp44tzLHLo11Zg7PL,LPwFyieJ0ZYPyqoyydhsrC" />
+            <Link Id="IBCdZQiUEUhM2eLIYXKyLH" Ids="LPwFyieJ0ZYPyqoyydhsrC,LjStXmHa07VQQfTuRIjUuG" IsHidden="true" />
+            <Link Id="PpDkqSCUJijPm5FEnoKFF2" Ids="UGcyIlNzKOpLSGb42FjG5H,IcknZHHVMWYNg07ZQRXSBu" />
+            <Link Id="C27UvU7S1tyPwH4MS7SWav" Ids="IcknZHHVMWYNg07ZQRXSBu,DkUKXs0mpeSQSQbCbfH7Ff" IsHidden="true" />
             <Patch Id="HCbgyTUYSBlQTYk3qPwD44" Name="Create" />
             <Patch Id="IR8s9bitYBUNObdOI9sNGA" Name="Update" ManuallySortedPins="true">
               <Pin Id="UAC6vD0TOtiLLV2J060hQO" Name="LoopType" Kind="InputPin">
-                <p:TypeAnnotation LastCategoryFullName="LoopTool" LastDependency="VL.LoopTool.csproj">
+                <p:TypeAnnotation LastCategoryFullName="LoopTool" LastDependency="VL.LoopTool.dll">
                   <Choice Kind="TypeFlag" Name="LoopTypes" />
                 </p:TypeAnnotation>
               </Pin>
@@ -1955,14 +1963,6 @@
               <Pin Id="LjStXmHa07VQQfTuRIjUuG" Name="SubLoopIndex" Kind="OutputPin" Bounds="432,395" />
               <Pin Id="DkUKXs0mpeSQSQbCbfH7Ff" Name="SubLoopCount" Kind="OutputPin" Bounds="461,429" />
             </Patch>
-            <Link Id="QN4WaRSwvWzMhEP7yZxBNI" Ids="M2whET0CQHMNOJP1mHeStp,KN3S5W4rcNGLSHTQF7x1k8" />
-            <Link Id="M3SmfsuWg3DLXxIOga2S8l" Ids="KN3S5W4rcNGLSHTQF7x1k8,AtVEPbteejQLOTI4a0POFr" IsHidden="true" />
-            <Link Id="U0ouq8iWAkZQY9NUlocO3d" Ids="D71Pa8mq3owOhYfSTkAbhS,TEMop2NwzsINHaWkbf4cT3" />
-            <Link Id="G4EK29aatQILLRds6Uyoy6" Ids="TEMop2NwzsINHaWkbf4cT3,PEgnh6BZJ7PNt5OWhJuLdE" IsHidden="true" />
-            <Link Id="GyvpnPNgeK4OalvorcK7Qm" Ids="TSRCtWp44tzLHLo11Zg7PL,LPwFyieJ0ZYPyqoyydhsrC" />
-            <Link Id="IBCdZQiUEUhM2eLIYXKyLH" Ids="LPwFyieJ0ZYPyqoyydhsrC,LjStXmHa07VQQfTuRIjUuG" IsHidden="true" />
-            <Link Id="PpDkqSCUJijPm5FEnoKFF2" Ids="UGcyIlNzKOpLSGb42FjG5H,IcknZHHVMWYNg07ZQRXSBu" />
-            <Link Id="C27UvU7S1tyPwH4MS7SWav" Ids="IcknZHHVMWYNg07ZQRXSBu,DkUKXs0mpeSQSQbCbfH7Ff" IsHidden="true" />
           </Patch>
         </Node>
         <!--
@@ -29225,7 +29225,7 @@
   </Patch>
   <NugetDependency Id="McUm69IxBzSP15X8o3AIyV" Location="VL.CoreLib" Version="2023.5.3-0450-g34173d70fc" />
   <NugetDependency Id="TrZoxHvmZwiPRwP2sqzxRR" Location="VL.Stride" Version="2023.5.3-0450-g34173d70fc" />
-  <NugetDependency Id="H4lR7UGMskiMwuFk4oGROf" Location="VL.Fuse" Version="0.0.0.0" />
+  <NugetDependency Id="H4lR7UGMskiMwuFk4oGROf" Location="VL.Fuse" Version="1.0.0-alpha08" />
   <NugetDependency Id="Hspjphb2FniLCnNpeiZvwB" Location="VL.Skia" Version="2023.5.3-0450-g34173d70fc" />
   <NugetDependency Id="TfGhX55Egl9MUpgHT82psV" Location="VL.CoreLib.Windows" Version="2023.5.3-0450-g34173d70fc" />
   <NugetDependency Id="NfrWSUnnpvCOgCX6E9QAlY" Location="VL.ScreenRecorder" Version="0.1.4-alpha" />
@@ -29248,5 +29248,5 @@
   <NugetDependency Id="IkTKLz1AB4JP9YJJXhzcJd" Location="VL.Stride.Runtime" Version="2023.5.3-0450-g34173d70fc" />
   <NugetDependency Id="FdjTeXYnSKoLjpwPkybWmr" Location="VL.LoopTool" Version="0.0.0" />
   <NugetDependency Id="B2DD9bE1NVGMTko9SwVYa8" Location="VL.Stride.TextureFX" Version="2023.5.3-0450-g34173d70fc" />
-  <ProjectDependency Id="IQ1FP3WxW8tLkbw8f8B03v" Location="./csharp/VL.LoopTool/VL.LoopTool.csproj" />
+  <PlatformDependency Id="MyXSZZt3SPeOmBN39io5gn" Location="./lib/net6.0/VL.LoopTool.dll" />
 </Document>
