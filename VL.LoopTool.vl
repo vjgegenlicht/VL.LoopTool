@@ -1936,10 +1936,18 @@
             <Link Id="Q0SZxslgBLEOvSZl7aPnft" Ids="LqXNwtt4MhxOcbudm0KRjA,Q6b839YvBhYPDPSUtfHco3" />
             <Link Id="VNSqd3bv5kSPZXiov1ZjV3" Ids="DKEzBcZEzLnOCYBMiX7SMe,KqlEkaqc5ccLthE8AJsRKM" />
             <Link Id="KTv3f9G4Sf6ONbmgs2MD2y" Ids="RYRTEXgRpKaL7N37NwSmsG,EGfheJAqrMpNJGqhuEDi8C" />
+            <Link Id="QN4WaRSwvWzMhEP7yZxBNI" Ids="M2whET0CQHMNOJP1mHeStp,KN3S5W4rcNGLSHTQF7x1k8" />
+            <Link Id="M3SmfsuWg3DLXxIOga2S8l" Ids="KN3S5W4rcNGLSHTQF7x1k8,AtVEPbteejQLOTI4a0POFr" IsHidden="true" />
+            <Link Id="U0ouq8iWAkZQY9NUlocO3d" Ids="D71Pa8mq3owOhYfSTkAbhS,TEMop2NwzsINHaWkbf4cT3" />
+            <Link Id="G4EK29aatQILLRds6Uyoy6" Ids="TEMop2NwzsINHaWkbf4cT3,PEgnh6BZJ7PNt5OWhJuLdE" IsHidden="true" />
+            <Link Id="GyvpnPNgeK4OalvorcK7Qm" Ids="TSRCtWp44tzLHLo11Zg7PL,LPwFyieJ0ZYPyqoyydhsrC" />
+            <Link Id="IBCdZQiUEUhM2eLIYXKyLH" Ids="LPwFyieJ0ZYPyqoyydhsrC,LjStXmHa07VQQfTuRIjUuG" IsHidden="true" />
+            <Link Id="PpDkqSCUJijPm5FEnoKFF2" Ids="UGcyIlNzKOpLSGb42FjG5H,IcknZHHVMWYNg07ZQRXSBu" />
+            <Link Id="C27UvU7S1tyPwH4MS7SWav" Ids="IcknZHHVMWYNg07ZQRXSBu,DkUKXs0mpeSQSQbCbfH7Ff" IsHidden="true" />
             <Patch Id="HCbgyTUYSBlQTYk3qPwD44" Name="Create" />
             <Patch Id="IR8s9bitYBUNObdOI9sNGA" Name="Update" ManuallySortedPins="true">
               <Pin Id="UAC6vD0TOtiLLV2J060hQO" Name="LoopType" Kind="InputPin">
-                <p:TypeAnnotation LastCategoryFullName="LoopTool" LastDependency="VL.LoopTool.csproj">
+                <p:TypeAnnotation LastCategoryFullName="LoopTool" LastDependency="VL.LoopTool.dll">
                   <Choice Kind="TypeFlag" Name="LoopTypes" />
                 </p:TypeAnnotation>
               </Pin>
@@ -1955,14 +1963,6 @@
               <Pin Id="LjStXmHa07VQQfTuRIjUuG" Name="SubLoopIndex" Kind="OutputPin" Bounds="432,395" />
               <Pin Id="DkUKXs0mpeSQSQbCbfH7Ff" Name="SubLoopCount" Kind="OutputPin" Bounds="461,429" />
             </Patch>
-            <Link Id="QN4WaRSwvWzMhEP7yZxBNI" Ids="M2whET0CQHMNOJP1mHeStp,KN3S5W4rcNGLSHTQF7x1k8" />
-            <Link Id="M3SmfsuWg3DLXxIOga2S8l" Ids="KN3S5W4rcNGLSHTQF7x1k8,AtVEPbteejQLOTI4a0POFr" IsHidden="true" />
-            <Link Id="U0ouq8iWAkZQY9NUlocO3d" Ids="D71Pa8mq3owOhYfSTkAbhS,TEMop2NwzsINHaWkbf4cT3" />
-            <Link Id="G4EK29aatQILLRds6Uyoy6" Ids="TEMop2NwzsINHaWkbf4cT3,PEgnh6BZJ7PNt5OWhJuLdE" IsHidden="true" />
-            <Link Id="GyvpnPNgeK4OalvorcK7Qm" Ids="TSRCtWp44tzLHLo11Zg7PL,LPwFyieJ0ZYPyqoyydhsrC" />
-            <Link Id="IBCdZQiUEUhM2eLIYXKyLH" Ids="LPwFyieJ0ZYPyqoyydhsrC,LjStXmHa07VQQfTuRIjUuG" IsHidden="true" />
-            <Link Id="PpDkqSCUJijPm5FEnoKFF2" Ids="UGcyIlNzKOpLSGb42FjG5H,IcknZHHVMWYNg07ZQRXSBu" />
-            <Link Id="C27UvU7S1tyPwH4MS7SWav" Ids="IcknZHHVMWYNg07ZQRXSBu,DkUKXs0mpeSQSQbCbfH7Ff" IsHidden="true" />
           </Patch>
         </Node>
         <!--
@@ -16349,31 +16349,11 @@
                         <Choice Kind="TypeFlag" Name="String" />
                       </p:TypeAnnotation>
                     </Pad>
-                    <Node Bounds="2190,1076,25,19" Id="ECDMy5miJSZLGD6mFgQa89">
-                      <p:NodeReference LastCategoryFullName="ScreenRecorderLib.RecorderStatus" LastDependency="ScreenRecorderLib.dll">
-                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <CategoryReference Kind="AssemblyCategory" Name="RecorderStatus" />
-                        <Choice Kind="OperationCallFlag" Name="=" />
-                      </p:NodeReference>
-                      <Pin Id="EQIkfrLbKYcL0FrMK78MbM" Name="Input" Kind="InputPin" />
-                      <Pin Id="FBC96ixdR2KPOVAOrLuT1b" Name="Input 2" Kind="InputPin" />
-                      <Pin Id="C9uIvHGicjqQURYSxFoCLf" Name="Result" Kind="OutputPin" />
-                    </Node>
                     <Pad Id="TF7no5JSsRSPjAIYuuxGmj" Comment="" Bounds="2212,1052,69,16" ShowValueBox="true" isIOBox="true" Value="Idle">
                       <p:TypeAnnotation LastCategoryFullName="ScreenRecorderLib" LastDependency="ScreenRecorderLib.dll">
                         <Choice Kind="TypeFlag" Name="RecorderStatus" />
                       </p:TypeAnnotation>
                     </Pad>
-                    <Node Bounds="2221,1163,25,19" Id="TaH1UJ1xiO2MCdT6T3vsnr">
-                      <p:NodeReference LastCategoryFullName="ScreenRecorderLib.RecorderStatus" LastDependency="ScreenRecorderLib.dll">
-                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <CategoryReference Kind="AssemblyCategory" Name="RecorderStatus" />
-                        <Choice Kind="OperationCallFlag" Name="=" />
-                      </p:NodeReference>
-                      <Pin Id="ATgBPZnmCYTQBZ8NlX9zKS" Name="Input" Kind="InputPin" />
-                      <Pin Id="T3Y1sOeMyydLeKuNJV4a6F" Name="Input 2" Kind="InputPin" />
-                      <Pin Id="Oxb1CG6h8zfN7cqhwiAuMC" Name="Result" Kind="OutputPin" />
-                    </Node>
                     <Pad Id="TExGT0qRp21PlRSEhXyLsW" Comment="" Bounds="2246,1141,69,16" ShowValueBox="true" isIOBox="true" Value="Recording">
                       <p:TypeAnnotation LastCategoryFullName="ScreenRecorderLib" LastDependency="ScreenRecorderLib.dll">
                         <Choice Kind="TypeFlag" Name="RecorderStatus" />
@@ -16388,16 +16368,6 @@
                       <Pin Id="E7EvHzTSHTPP7vurbFVxfi" Name="Input" Kind="StateInputPin" />
                       <Pin Id="EJu9xrMzICdLXLGI50IRk5" Name="Ready" Kind="InputPin" />
                       <Pin Id="TNMzPruDwotNBG1QNOOtlg" Name="Output" Kind="StateOutputPin" />
-                    </Node>
-                    <Node Bounds="2250,1220,25,19" Id="NeNRxGaquuWOCNWuRpyuo1">
-                      <p:NodeReference LastCategoryFullName="ScreenRecorderLib.RecorderStatus" LastDependency="ScreenRecorderLib.dll">
-                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <CategoryReference Kind="AssemblyCategory" Name="RecorderStatus" />
-                        <Choice Kind="OperationCallFlag" Name="=" />
-                      </p:NodeReference>
-                      <Pin Id="IBr3QN0y8oSPwsy4cA0Td7" Name="Input" Kind="InputPin" />
-                      <Pin Id="O0U4rndpjmiPMYa2RAwRi0" Name="Input 2" Kind="InputPin" />
-                      <Pin Id="Ci4HwplVjPUNYoDCjfDg20" Name="Result" Kind="OutputPin" />
                     </Node>
                     <Pad Id="AztUelsOdPDNpJRhLzZbLD" Comment="" Bounds="2271,1207,69,15" ShowValueBox="true" isIOBox="true" Value="Finishing">
                       <p:TypeAnnotation LastCategoryFullName="ScreenRecorderLib" LastDependency="ScreenRecorderLib.dll">
@@ -16426,7 +16396,7 @@
                     </Node>
                     <ControlPoint Id="Cyten2nGjWrNqGr5XuqHKL" Bounds="2227,1088" />
                     <ControlPoint Id="Nnm3DQqP5ELQL1KofB4X0u" Bounds="2193,1003" />
-                    <ControlPoint Id="Rkhx7XLGqLaMU66aHpngg5" Bounds="2254,1188" />
+                    <ControlPoint Id="Rkhx7XLGqLaMU66aHpngg5" Bounds="2253,1190" />
                     <Overlay Id="HLiWfy3Ez0aNL1NTrJGYyh" Name="RecorderStatus" Bounds="2011,974,348,805" />
                     <Node Bounds="66,909,112,26" Id="LQxolhCofLdNpmajc2myGo">
                       <p:NodeReference LastCategoryFullName="LoopTool.System.Runtime.RecorderRuntime.Recorders.VideoRecorder (LoopTool)" LastDependency="VL.LoopTool.vl">
@@ -16632,16 +16602,6 @@
                       <Pin Id="LaouuEBVGcFN4wKcR5GYG8" Name="Input" Kind="StateInputPin" />
                       <Pin Id="OrxKBXYQqqXL4rUPeqxOEk" Name="Output" Kind="StateOutputPin" />
                       <Pin Id="LLFpWCcwLyCNFauofFIakz" Name="Status" Kind="OutputPin" />
-                    </Node>
-                    <Node Bounds="271,680,25,19" Id="FtzNWpvj60UOlau2aI74JD">
-                      <p:NodeReference LastCategoryFullName="ScreenRecorderLib.RecorderStatus" LastDependency="ScreenRecorderLib.dll">
-                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <CategoryReference Kind="AssemblyCategory" Name="RecorderStatus" />
-                        <Choice Kind="OperationCallFlag" Name="=" />
-                      </p:NodeReference>
-                      <Pin Id="GQ1ye7wYPsANZOKqIL9qsL" Name="Input" Kind="InputPin" />
-                      <Pin Id="Ehh1GSAbDFYPsoIzdDto80" Name="Input 2" Kind="InputPin" />
-                      <Pin Id="EZx2dH67tBxLx2LiosB0Uv" Name="Result" Kind="OutputPin" />
                     </Node>
                     <Pad Id="UMI04p49aKAOsTIFjFJikr" Comment="" Bounds="293,660,69,16" ShowValueBox="true" isIOBox="true" Value="Idle">
                       <p:TypeAnnotation LastCategoryFullName="ScreenRecorderLib" LastDependency="ScreenRecorderLib.dll">
@@ -17117,6 +17077,42 @@
                       </p:TypeAnnotation>
                     </Pad>
                     <Pad Id="P51UEefFBd3NuGavTckNqk" SlotId="UoF0uiCiU8YLRbLe5uCkYM" Bounds="1830,1105" />
+                    <Node Bounds="269,680,25,19" Id="H0ECzB4IPp2NirOOgFQHpS">
+                      <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="=" />
+                      </p:NodeReference>
+                      <Pin Id="Gq1xPJRmyvbPXvQcbvXX3M" Name="Input" Kind="InputPin" />
+                      <Pin Id="DPOtCsHkmkpNtMqSeZY6U9" Name="Input 2" Kind="InputPin" />
+                      <Pin Id="OhhJrzCiY9uOu3ZBoptmTg" Name="Result" Kind="OutputPin" />
+                    </Node>
+                    <Node Bounds="2185,1061,25,19" Id="Gl1iIRl3Q8BNzmyoB2x1M4">
+                      <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="=" />
+                      </p:NodeReference>
+                      <Pin Id="NfpXZgughlwLjLWEzlj1yi" Name="Input" Kind="InputPin" />
+                      <Pin Id="GccQsbugF0YQJEPLcybSI5" Name="Input 2" Kind="InputPin" />
+                      <Pin Id="DkZo4PJ2DA1LszDDUk7wx4" Name="Result" Kind="OutputPin" />
+                    </Node>
+                    <Node Bounds="2223,1154,25,19" Id="Rvf2C7LdsbnO143CEBd0hB">
+                      <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="=" />
+                      </p:NodeReference>
+                      <Pin Id="BwPxHnco83tMe52eBqvc35" Name="Input" Kind="InputPin" />
+                      <Pin Id="EmGkcaUrnAJM79Gw8ls8BE" Name="Input 2" Kind="InputPin" />
+                      <Pin Id="IJMJ4jdDpT5PsfD1ilH9Zq" Name="Result" Kind="OutputPin" />
+                    </Node>
+                    <Node Bounds="2248,1234,25,19" Id="Hks1p9Si1eBPvsYuCpKHdI">
+                      <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="=" />
+                      </p:NodeReference>
+                      <Pin Id="Cf69NZSdV2KLGbM1HjWbDB" Name="Input" Kind="InputPin" />
+                      <Pin Id="F0ln6REQtUXNX4ykBv7mff" Name="Input 2" Kind="InputPin" />
+                      <Pin Id="PQRt59PVzZNOIqqsIRf4Ea" Name="Result" Kind="OutputPin" />
+                    </Node>
                   </Canvas>
                   <Link Id="Jqj1JRuX3TMNjgHN07sbfP" Ids="Kz3BLuNjRHbNohBAcLa49R,CdeX6VMjXL1ODEOmT5XAF8" />
                   <Link Id="UIyudj0yw9zPxYcdjc2R8V" Ids="QuPZUOXEsCENrgmkuiBRCT,FcWLKeDJrBuOKxit0L7sRb" />
@@ -17159,19 +17155,10 @@
                   <Link Id="MkQOJemIdAuOVcLteyZpSe" Ids="HAGelcR9qoLLM0SmNUmB7N,QgL0Ss9nFbZPB3AJsKTk5l" />
                   <Link Id="FNx3DG2LnZWPDXiCdtYlGC" Ids="I9zjB3ZekRcLkElTNTiEEf,TcpCt7JNcX2Lq1ajOYewoR" />
                   <Link Id="AoM4IRoNJyTLoHgrMffTWR" Ids="NaCcKwEvuBFNllVtrYsXOD,IhlDBxLfL88LwssyhTvzMv" />
-                  <Link Id="GRPu0YRoFF1OU2FLgTUgYY" Ids="TF7no5JSsRSPjAIYuuxGmj,FBC96ixdR2KPOVAOrLuT1b" />
-                  <Link Id="CoxML3f0NUQO3dUC1Gfgf1" Ids="TExGT0qRp21PlRSEhXyLsW,T3Y1sOeMyydLeKuNJV4a6F" />
-                  <Link Id="IlUUaDBhtamM7OBjC7nwRz" Ids="C9uIvHGicjqQURYSxFoCLf,EJu9xrMzICdLXLGI50IRk5" />
-                  <Link Id="NxwwDKfFDpHON0q64qX5q1" Ids="AztUelsOdPDNpJRhLzZbLD,O0U4rndpjmiPMYa2RAwRi0" />
-                  <Link Id="BF1XdnaloiVPQjI8ETkGal" Ids="Oxb1CG6h8zfN7cqhwiAuMC,JdSIqYF72rPLe7ckjn1ABT" />
-                  <Link Id="FebhVBBm1MENhUFyw7HzVr" Ids="Ci4HwplVjPUNYoDCjfDg20,MSOIZ1x6TEiQLGIA8ay3xT" />
                   <Link Id="Ho1e7x0hYtlLvcjGp64Jvu" Ids="MrVX9JOgE4kMs1XEKmhVIf,UCgzlBFfnkCNjsopFAvYDy" />
-                  <Link Id="AGQZlEbjJaDLK58gg5dJs9" Ids="Cyten2nGjWrNqGr5XuqHKL,ATgBPZnmCYTQBZ8NlX9zKS" />
                   <Link Id="EfNjsag3oM1LwBLCbCCWS2" Ids="Ha6kVZmIlF5PY1Ti1Dm06p,Nnm3DQqP5ELQL1KofB4X0u" IsHidden="true" />
                   <Link Id="AxxTEP8CZ36OA3aWgsGwhw" Ids="Ha6kVZmIlF5PY1Ti1Dm06p,Cyten2nGjWrNqGr5XuqHKL" IsHidden="true" />
-                  <Link Id="ImuznwxEsq0M3ZqWcNGRKn" Ids="Nnm3DQqP5ELQL1KofB4X0u,EQIkfrLbKYcL0FrMK78MbM" />
                   <Link Id="SosXyz08r8QNbt3KlLKXHM" Ids="Ha6kVZmIlF5PY1Ti1Dm06p,Rkhx7XLGqLaMU66aHpngg5" IsHidden="true" />
-                  <Link Id="QBCkkEGYwzTOriGqOUrc1K" Ids="Rkhx7XLGqLaMU66aHpngg5,IBr3QN0y8oSPwsy4cA0Td7" />
                   <Link Id="A6XijCH9GAjOsXRU0aNf3p" Ids="Pzab6stzL3VLuYl1RrxtRq,CcTrk7850FxPZR6PP10UeN" />
                   <Link Id="JCqJUcxvh2UOENtfdxu6aK" Ids="NbcIQE4DloVMyKJE8x96PL,SPGVYv04JpVOVeeIv9Jspz" />
                   <Link Id="HdLyk7yoPGTOOrYcXzWMQp" Ids="B9UoeaAAgnYPEhIbrW2Mjh,HEYCtkHbenCNx7CZaqrhJ6" />
@@ -17210,9 +17197,6 @@
                   <Link Id="IDE8DMKLLfMNuQTTUsViCJ" Ids="GcGLQ7DEuWKMk7fdOgg5v4,VmQ3i0cc2EaNzhsyOJGSKR" IsHidden="true" />
                   <Link Id="GaNHMdxnuP6MdQQLjJiEi9" Ids="SjKnmskFSq8NC1ZAw4CoST,GcGLQ7DEuWKMk7fdOgg5v4" />
                   <Link Id="ArFIWzkkknEMolZKDUnpC1" Ids="KtPp16aKHiYOsv1ktLgv6C,LaouuEBVGcFN4wKcR5GYG8" />
-                  <Link Id="T7nuRTqZCzmO6hkVD4Wv6V" Ids="UMI04p49aKAOsTIFjFJikr,Ehh1GSAbDFYPsoIzdDto80" />
-                  <Link Id="TQFCTuXcH0KMwAbQ2DGgJg" Ids="LLFpWCcwLyCNFauofFIakz,GQ1ye7wYPsANZOKqIL9qsL" />
-                  <Link Id="J9DVjR4Z6KiLEelPw83yGO" Ids="EZx2dH67tBxLx2LiosB0Uv,UeCHW3tSbGKLrqjooNIHFz" />
                   <Link Id="HTsO1hh7D9eL1xndnvV4Vh" Ids="VaPTMTj85pANtxy4Uh56TK,E87DBecitYXPkEfm0Fjoow" />
                   <Link Id="N5I2L7rDMljPPatHOjgWIp" Ids="MufcDzRlG5VPKwk6GTXQkK,RIIyyhBajZQNf2Zz3KkvS8" />
                   <Link Id="KW249WBmDsvP4gVQa1hOkn" Ids="QcCSnOLS8NPMDOqvG0VLSn,QQSPg43tameNMOfamH3g9g" />
@@ -17308,7 +17292,7 @@
                     </Pin>
                     <Pin Id="Eu8LJMOCUtGPwJ73bl5z1K" Name="RecorderSettings" Kind="InputPin" />
                   </Patch>
-                  <Patch Id="PVv70bhCFQ2MyviPyifI36" Name="Update" ParticipatingElements="PPlBuUQkGTxMwNVP3WWQKL,VEgi2l5ZtUYN9qUwPhwFPI,FtzNWpvj60UOlau2aI74JD" />
+                  <Patch Id="PVv70bhCFQ2MyviPyifI36" Name="Update" ParticipatingElements="PPlBuUQkGTxMwNVP3WWQKL,VEgi2l5ZtUYN9qUwPhwFPI" />
                   <Patch Id="OUKwO4IV71qP6UbgBLHVU3" Name="CaptureSettings" ParticipatingElements="JepnYZoZZTsLSiob1tYszj,OmA7r7VvpDqP9GZRFghLmu,GP7MoFbDSY4Pl5uuJin0rp,BVyQ6I7bMLRLdGSbFtSUMQ,TJuJWRC8hGyPkCG3Sa2GBh,U94JcdNnPvrLNKI3UjghZw,BEhGmUDuDKOOf6NIvB3eNN,Qatgy0fYMtALGFsoW7XHkV,KQHZHymmYsVO39GfTEHSAY,NWAnYlKfbiRLghct6xRl8I,R3bog95N89LLhCdQ1q2zZk,UBzOp02UHfsMialP3H5mt5,DklxHyMwn3SN30VNrMH8l0,UYrymqgDtzPMkjJqlaNMVG,CFy3BVvAkjtOuJbmFShIvf,SOC0V7f1lbENlCIxrywWNU,JIPAr7jcSy3L3AxBy5V8Kv,FESv8ccuJomL5ngr3yRzbU,EWIqefOekp1P4pMSUPsLBl,Oym1ZfFPU61MDKCN1DUSaT,ArpNDN29ZLiOOAYnc7bNOh,DCghVf1gmKVMuiYOwKYCbE,MsLK4FFgstFPKd74nWAhrL,TqDK1wMB83LMlzUBmS2AsE,VP2uyS6PiuzQVQokurrfu9,BqhNSG8JrL8OOkk4vwzrlO,KFHWG0MkAXOPPvVOgVbCpD,TJNcATpVF8eOKqvaxNsRAY,FWmTkxKow01MMI4AHb5EZw,RutRSxC5gvqNvPGdTofO9d,VgN3v0OkTjFMkfEgX8Fn7S">
                     <Pin Id="I2vwmWus9MwPdc69yXymg8" MergeId="158681" Name="Is Fixed Framerate" Kind="InputPin" />
                   </Patch>
@@ -17321,7 +17305,7 @@
                     <Pin Id="Oc4gv68s18GMv8TPT0fKbS" MergeId="159514" Name="Record" Kind="InputPin" />
                     <Pin Id="CCcNp2kY2QXP5JzpRUu34B" MergeId="159515" Name="On Completed" Kind="OutputPin" />
                   </Patch>
-                  <Patch Id="TA1Foj7oBblQFNVRbrRUB1" Name="RecorderStatus" ParticipatingElements="ECDMy5miJSZLGD6mFgQa89,TaH1UJ1xiO2MCdT6T3vsnr,Cls3w2R7pr6K9n9pFCnlCn,NeNRxGaquuWOCNWuRpyuo1,EkXrPNIquC9LdKG3AVHa2R,NBXOHCnZqKJNMUmxHioc0v">
+                  <Patch Id="TA1Foj7oBblQFNVRbrRUB1" Name="RecorderStatus" ParticipatingElements="Cls3w2R7pr6K9n9pFCnlCn,EkXrPNIquC9LdKG3AVHa2R,NBXOHCnZqKJNMUmxHioc0v">
                     <Pin Id="Ha6kVZmIlF5PY1Ti1Dm06p" Name="Status" Kind="InputPin" />
                   </Patch>
                   <Patch Id="QneS7BKiMH7NMRvnw9lHvQ" Name="RecorderSettings" ParticipatingElements="IlNWBVAmcq4M7j1jTjWuEV,S670JFlfHyWPrLUY2mTy00,FU8vanhZH4wLJuckTZyFxe,RQl6WrvLTiAOICHPdfMl4k,DffvZTfkOovO8P2WqsAuy1,U4jluvZ58vOLV1pnDXHOdg,GSIpZo4QWuPLMok1NgqAOl,DXPBgHRl9oaOUg7FhItEPs,FGNIA6zEXIrPocRCP2TJ4H">
@@ -17375,6 +17359,18 @@
                   <Link Id="BWzG4YTZ69yOmcTTDbDTA7" Ids="Po3n1NKFMjJNoEXfwxJDhd,Q1HS8cVEPzCLiPzfTfF7Ht" />
                   <Link Id="FGNIA6zEXIrPocRCP2TJ4H" Ids="P51UEefFBd3NuGavTckNqk,TNm2fGLt4RGLNTLmGJ8koU" />
                   <Link Id="BQLCvgai9IMLDk9ZxYFqzS" Ids="L60SdbLAUSOMcnMKyxxL8O,SPjhD4ptlRrP2OQuAw3w5f" />
+                  <Link Id="PxsZhmdyv20LW9kiQMlG5o" Ids="UMI04p49aKAOsTIFjFJikr,DPOtCsHkmkpNtMqSeZY6U9" />
+                  <Link Id="OzgkgkiqbndMZJytM8zV73" Ids="LLFpWCcwLyCNFauofFIakz,Gq1xPJRmyvbPXvQcbvXX3M" />
+                  <Link Id="Bl9m9u1laJRPslSrrkF5sU" Ids="OhhJrzCiY9uOu3ZBoptmTg,UeCHW3tSbGKLrqjooNIHFz" />
+                  <Link Id="RlIn43seNv9PaAsDvho68k" Ids="Nnm3DQqP5ELQL1KofB4X0u,NfpXZgughlwLjLWEzlj1yi" />
+                  <Link Id="Oej05cYCVX2OtYfoabv0uK" Ids="TF7no5JSsRSPjAIYuuxGmj,GccQsbugF0YQJEPLcybSI5" />
+                  <Link Id="Q7Vv7lKYzk9NEvTLXvfYEh" Ids="DkZo4PJ2DA1LszDDUk7wx4,EJu9xrMzICdLXLGI50IRk5" />
+                  <Link Id="GIKXGpLqQwgO6P6PWPyI9y" Ids="Cyten2nGjWrNqGr5XuqHKL,BwPxHnco83tMe52eBqvc35" />
+                  <Link Id="F7NN5k6MnuELElrhFg7rRL" Ids="TExGT0qRp21PlRSEhXyLsW,EmGkcaUrnAJM79Gw8ls8BE" />
+                  <Link Id="JD2OxWlQwZsNwKHEwVhwgn" Ids="IJMJ4jdDpT5PsfD1ilH9Zq,JdSIqYF72rPLe7ckjn1ABT" />
+                  <Link Id="FM40Sr73mCgL4s950vuWz3" Ids="Rkhx7XLGqLaMU66aHpngg5,Cf69NZSdV2KLGbM1HjWbDB" />
+                  <Link Id="J81L7L7gCCwLLi6TAROTQv" Ids="AztUelsOdPDNpJRhLzZbLD,F0ln6REQtUXNX4ykBv7mff" />
+                  <Link Id="JIE3pwGIlwxPtT0QQ4oGOt" Ids="PQRt59PVzZNOIqqsIRf4Ea,MSOIZ1x6TEiQLGIA8ay3xT" />
                 </Patch>
               </Node>
               <!--
@@ -29225,7 +29221,7 @@
   </Patch>
   <NugetDependency Id="McUm69IxBzSP15X8o3AIyV" Location="VL.CoreLib" Version="2023.5.3-0450-g34173d70fc" />
   <NugetDependency Id="TrZoxHvmZwiPRwP2sqzxRR" Location="VL.Stride" Version="2023.5.3-0450-g34173d70fc" />
-  <NugetDependency Id="H4lR7UGMskiMwuFk4oGROf" Location="VL.Fuse" Version="0.0.0.0" />
+  <NugetDependency Id="H4lR7UGMskiMwuFk4oGROf" Location="VL.Fuse" Version="1.0.0-alpha08" />
   <NugetDependency Id="Hspjphb2FniLCnNpeiZvwB" Location="VL.Skia" Version="2023.5.3-0450-g34173d70fc" />
   <NugetDependency Id="TfGhX55Egl9MUpgHT82psV" Location="VL.CoreLib.Windows" Version="2023.5.3-0450-g34173d70fc" />
   <NugetDependency Id="NfrWSUnnpvCOgCX6E9QAlY" Location="VL.ScreenRecorder" Version="0.1.4-alpha" />
@@ -29237,8 +29233,6 @@
   <DocumentDependency Id="UQ2psKpy06wNz9babAUC00" Location="./vl/VL.LoopTool.Presets.vl" IsForward="true" />
   <DocumentDependency Id="Hf2ESdJo0maPnqmjqMGH40" Location="./vl/VL.LoopTool.Animation.vl" IsForward="true" />
   <NugetDependency Id="GnYqfNgNYRTPUpAyiSl7ME" Location="VL.Addons" Version="0.1.4" />
-  <PlatformDependency Id="Ot8GugXRHoaOoy6Xb6Ry0k" Location="../../../Users/gegen/AppData/Local/vvvv/gamma-preview/nugets/VL.ScreenRecorder.0.1.4-alpha/lib/ScreenRecorderLib.dll" />
-  <PlatformDependency Id="MjfLEIkcc9qObOJvYCOPVS" Location="C:/Users/gegen/AppData/Local/vvvv/gamma-preview/nugets/VL.ScreenRecorder.0.1.4-alpha/lib/netstandard2.0/VL.ScreenRecorder.dll" />
   <PlatformDependency Id="EhgnXMmPLvKNawHPNEZ2SG" Location="C:/Program Files/vvvv/vvvv_gamma_5.3-0294-g08cfc6dc6d/packs/VL.Stride.Runtime/src/bin/Debug/netstandard2.0/VL.Stride.Runtime.dll" />
   <PlatformDependency Id="DkDDsFQjWlxLZvYnaH2zzQ" Location="mscorlib.dll" />
   <NugetDependency Id="GZV5oCMY1NPNHwq3RRYSCq" Location="VL.Core" Version="2023.5.3-0450-g34173d70fc" />
@@ -29248,5 +29242,5 @@
   <NugetDependency Id="IkTKLz1AB4JP9YJJXhzcJd" Location="VL.Stride.Runtime" Version="2023.5.3-0450-g34173d70fc" />
   <NugetDependency Id="FdjTeXYnSKoLjpwPkybWmr" Location="VL.LoopTool" Version="0.0.0" />
   <NugetDependency Id="B2DD9bE1NVGMTko9SwVYa8" Location="VL.Stride.TextureFX" Version="2023.5.3-0450-g34173d70fc" />
-  <ProjectDependency Id="IQ1FP3WxW8tLkbw8f8B03v" Location="./csharp/VL.LoopTool/VL.LoopTool.csproj" />
+  <PlatformDependency Id="MyXSZZt3SPeOmBN39io5gn" Location="./lib/net6.0/VL.LoopTool.dll" />
 </Document>
